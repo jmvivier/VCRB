@@ -1208,98 +1208,6 @@
             font-size:
                 13px;
         }
-
-
-        /* =========================================================
-           APERCU PHOTO AU SURVOL
-           
-           Toujours positionné par rapport au viewport.
-        ========================================================= */
-
-        #hoverPreview {
-
-            position:
-                fixed;
-
-            top:
-                0;
-
-            right:
-                0;
-
-            width:
-                45vw;
-
-            height:
-                55vh;
-
-            min-width:
-                500px;
-
-            min-height:
-                400px;
-
-            z-index:
-                999999;
-
-            padding:
-                24px;
-
-            object-fit:
-                contain;
-
-            background:
-                white;
-
-            border-left:
-                1px solid
-                var(--border);
-
-            border-bottom:
-                1px solid
-                var(--border);
-
-            border-bottom-left-radius:
-                18px;
-
-            box-shadow:
-                -15px 18px 50px
-                rgba(0,0,0,.22);
-
-            opacity:
-                0;
-
-            visibility:
-                hidden;
-
-            transform:
-                translateY(-12px)
-                scale(.985);
-
-            transition:
-                opacity .22s ease,
-                transform .22s ease,
-                visibility .22s;
-
-            pointer-events:
-                none;
-        }
-
-
-        #hoverPreview.visible {
-
-            opacity:
-                1;
-
-            visibility:
-                visible;
-
-            transform:
-                translateY(0)
-                scale(1);
-        }
-
-
         /* =========================================================
            MODAL
         ========================================================= */
@@ -2015,17 +1923,6 @@
             }
 
 
-            /*
-             * L'aperçu hover est désactivé
-             * sur les écrans tactiles.
-             */
-            #hoverPreview {
-
-                display:
-                    none;
-            }
-
-
             #modal {
 
                 padding:
@@ -2099,6 +1996,26 @@
 
                 width:
                     100%;
+            }
+        }
+
+
+        /* Photos supplémentaires uniquement dans la fiche véhicule */
+        .modal-image:has(img + img) {
+            flex-direction: column;
+            gap: 12px;
+            padding: 12px;
+        }
+        .modal-image:has(img + img) img {
+            width: 100%;
+            height: 240px;
+            min-height: 0;
+            padding: 5px;
+            object-fit: contain;
+        }
+        @media (max-width: 950px) {
+            .modal-image:has(img + img) {
+                max-height: none;
             }
         }
 
@@ -2288,21 +2205,6 @@
 
 
     <!-- =========================================================
-         APERCU AU SURVOL
-         
-         IMPORTANT :
-         Il est directement dans BODY pour que
-         position: fixed soit bien relatif à l'écran.
-    ========================================================== -->
-
-    <img
-        id="hoverPreview"
-        src=""
-        alt="Aperçu du véhicule"
-    >
-
-
-    <!-- =========================================================
          MODAL
     ========================================================== -->
 
@@ -2408,9 +2310,6 @@
 
         const modalClose =
             document.getElementById("modalClose");
-
-        const hoverPreview =
-            document.getElementById("hoverPreview");
 
 
         /* =========================================================
@@ -2936,61 +2835,6 @@
                         }
                     );
 
-
-                    /*
-                     * APERCU AU SURVOL
-                     */
-
-                    card.addEventListener(
-                        "mouseenter",
-                        () => {
-
-                            if (
-
-                                window.innerWidth <= 650
-
-                                ||
-
-                                !vehicle
-
-                                ||
-
-                                !vehicle.photoHover
-
-                            ) {
-
-                                return;
-                            }
-
-
-                            hoverPreview.src =
-                                vehicle.photoHover;
-
-
-                            hoverPreview.alt =
-                                `Aperçu de ${
-                                    vehicle.nom ||
-                                    "ce véhicule"
-                                }`;
-
-
-                            hoverPreview.classList.add(
-                                "visible"
-                            );
-                        }
-                    );
-
-
-                    card.addEventListener(
-                        "mouseleave",
-                        () => {
-
-                            hoverPreview.classList.remove(
-                                "visible"
-                            );
-                        }
-                    );
-
                 }
             );
         }
@@ -3043,6 +2887,15 @@
                             )}"
                             onerror="imageFallback(this)"
                         >
+
+                        ${vehicle.photoHover ? `
+                            <img
+                                src="${escapeHtml(vehicle.photoHover)}"
+                                alt="${escapeHtml('Autre vue - ' + (vehicle.nom || 'Véhicule'))}"
+                                loading="lazy"
+                                onerror="this.style.display='none'"
+                            >
+                        ` : ""}
 
                     </div>
 
@@ -3322,11 +3175,6 @@
                 ) {
 
                     closeModal();
-
-
-                    hoverPreview.classList.remove(
-                        "visible"
-                    );
                 }
 
             }
