@@ -1,3 +1,7 @@
+// Pour chaque véhicule, renseigner modeleExact, equipements (maximum 10),
+// avantages (maximum 5), et les coordonnées du garage.
+// Les rubriques vides ne s'affichent pas dans la fiche.
+// Exemple : equipements: ["Caméra de recul", "Climatisation"]
 const vehicles = [
 /* ===========================
    TPMR
@@ -16,7 +20,17 @@ prix:"46564€ aménagé",
 photo:"images/grand-tpmr-connect.jpg",
 pdf:"docs/tpmr-connect.pdf",
 amenagementPdf: "pdfs/Fiche-Amenagement-tpmr court.pdf",
-description:"Version courte TPMR."
+description:"Version courte TPMR.",
+    modeleExact: "",
+    equipements: [],
+    avantages: [],
+    garage: {
+        nom: "",
+        adresse: "",
+        telephone: "",
+        email: "",
+        contact: ""
+    }
 },
 
 {
@@ -32,7 +46,17 @@ prix:"44766€ aménagé",
 photo:"images/tpmr-connect.jpg",
 pdf:"docs/grand-tpmr-connect.pdf",
 amenagementPdf: "pdfs/Fiche-Amenagement-tpmr long.pdf",
-description:"Version longue TPMR."
+description:"Version longue TPMR.",
+    modeleExact: "",
+    equipements: [],
+    avantages: [],
+    garage: {
+        nom: "",
+        adresse: "",
+        telephone: "",
+        email: "",
+        contact: ""
+    }
 },
 
 
@@ -50,7 +74,17 @@ places:5,
 prix:"25582€",
 photo:"images/clio-hybrid.jpg",
 pdf:"docs/Renault clio full hybrid.pdf",
-description:"Citadine hybride."
+description:"Citadine hybride.",
+    modeleExact: "",
+    equipements: [],
+    avantages: [],
+    garage: {
+        nom: "",
+        adresse: "",
+        telephone: "",
+        email: "",
+        contact: ""
+    }
 },
 {
 id:5,
@@ -63,7 +97,17 @@ places:5,
 prix:"23553€",
 photo:"images/clio-essence.jpg",
 pdf:"docs/Renault clio essence.pdf",
-description:"Citadine essence."
+description:"Citadine essence.",
+    modeleExact: "",
+    equipements: [],
+    avantages: [],
+    garage: {
+        nom: "",
+        adresse: "",
+        telephone: "",
+        email: "",
+        contact: ""
+    }
 },
 {
 id:24,
@@ -81,7 +125,17 @@ prix:"31059€",
 coffre:434,
 photo:"images/peugeot-e2008.jpg",
 pdf:"docs/peugeot-e2008.pdf",
-description:"SUV compact électrique."
+description:"SUV compact électrique.",
+    modeleExact: "",
+    equipements: [],
+    avantages: [],
+    garage: {
+        nom: "",
+        adresse: "",
+        telephone: "",
+        email: "",
+        contact: ""
+    }
 },
 
 {
@@ -97,7 +151,17 @@ places:5,
 prix:"30579€",
 photo:"images/tourneo-courier.jpg",
 pdf:"docs/e-tourneo-courier.pdf",
-description:"Version électrique."
+description:"Version électrique.",
+    modeleExact: "",
+    equipements: [],
+    avantages: [],
+    garage: {
+        nom: "",
+        adresse: "",
+        telephone: "",
+        email: "",
+        contact: ""
+    }
 },
 
 
@@ -112,7 +176,17 @@ places:5,
 prix:"25709€",
 photo:"images/peugeot308SW.jpg",
 pdf:"docs/tourneo-courier.pdf",
-description:"Break."
+description:"Break.",
+    modeleExact: "",
+    equipements: [],
+    avantages: [],
+    garage: {
+        nom: "",
+        adresse: "",
+        telephone: "",
+        email: "",
+        contact: ""
+    }
 },
 
 {
@@ -127,7 +201,17 @@ places:5,
 prix:"36566€",
 photo:"images/peugeot308SW.jpg",
 pdf:"docs/Peugeot 308SW BEV.pdf",
-description:"Version électrique."
+description:"Version électrique.",
+    modeleExact: "",
+    equipements: [],
+    avantages: [],
+    garage: {
+        nom: "",
+        adresse: "",
+        telephone: "",
+        email: "",
+        contact: ""
+    }
 },
 
 
@@ -147,7 +231,17 @@ places:5,
 prix:25443,
 photo:"images/tourneo-courier.jpg",
 pdf:"docs/tourneo-courier.pdf",
-description:"Ludospace compact."
+description:"Ludospace compact.",
+    modeleExact: "",
+    equipements: [],
+    avantages: [],
+    garage: {
+        nom: "",
+        adresse: "",
+        telephone: "",
+        email: "",
+        contact: ""
+    }
 },
 
 {
@@ -162,7 +256,17 @@ places:5,
 prix:30579,
 photo:"images/tourneo-courier.jpg",
 pdf:"docs/e-tourneo-courier.pdf",
-description:"Version électrique."
+description:"Version électrique.",
+    modeleExact: "",
+    equipements: [],
+    avantages: [],
+    garage: {
+        nom: "",
+        adresse: "",
+        telephone: "",
+        email: "",
+        contact: ""
+    }
 },
 
 {
@@ -176,7 +280,17 @@ places:9,
 prix:"34271€",
 photo:"images/transit-custom-320l.jpg",
 pdf:"docs/FORD Transit Custom V710 KOMBI M1 320S TREND 2.0TDI.pdf",
-description:"Version courte."
+description:"Version courte.",
+    modeleExact: "",
+    equipements: [],
+    avantages: [],
+    garage: {
+        nom: "",
+        adresse: "",
+        telephone: "",
+        email: "",
+        contact: ""
+    }
 },
 
 {
@@ -190,7 +304,17 @@ places:9,
 prix:"35070€",
 photo:"images/transit-custom-320l.jpg",
 pdf:"docs/FORD Transit Custom V710 KOMBI 320L TREND 2.0TDI.pdf",
-description:"Version longue."
+description:"Version longue.",
+    modeleExact: "",
+    equipements: [],
+    avantages: [],
+    garage: {
+        nom: "",
+        adresse: "",
+        telephone: "",
+        email: "",
+        contact: ""
+    }
 },
 
 {
@@ -204,7 +328,17 @@ places:9,
 prix:"36416€",
 photo:"images/transit-custom-320l.jpg",
 pdf:"docs/FORD Transit Custom V710 KOMBI M1 340L TREND.pdf",
-description:"Version hybride rechargeable."
+description:"Version hybride rechargeable.",
+    modeleExact: "",
+    equipements: [],
+    avantages: [],
+    garage: {
+        nom: "",
+        adresse: "",
+        telephone: "",
+        email: "",
+        contact: ""
+    }
 },
 
 
@@ -223,7 +357,17 @@ places:2,
 prix:28130,
 photo:"images/caddy-cargo.jpg",
 pdf:"docs/caddy-cargo.pdf",
-description:"Utilitaire compact."
+description:"Utilitaire compact.",
+    modeleExact: "",
+    equipements: [],
+    avantages: [],
+    garage: {
+        nom: "",
+        adresse: "",
+        telephone: "",
+        email: "",
+        contact: ""
+    }
 },
 
 {
@@ -238,7 +382,17 @@ places:3,
 prix:29716,
 photo:"images/proace-city-ev.jpg",
 pdf:"docs/proace-city-ev.pdf",
-description:"Utilitaire compact électrique."
+description:"Utilitaire compact électrique.",
+    modeleExact: "",
+    equipements: [],
+    avantages: [],
+    garage: {
+        nom: "",
+        adresse: "",
+        telephone: "",
+        email: "",
+        contact: ""
+    }
 },
 
 {
@@ -252,7 +406,17 @@ places:3,
 prix:30492,
 photo:"images/proace-ev.jpg",
 pdf:"docs/proace-ev.pdf",
-description:"Utilitaire électrique."
+description:"Utilitaire électrique.",
+    modeleExact: "",
+    equipements: [],
+    avantages: [],
+    garage: {
+        nom: "",
+        adresse: "",
+        telephone: "",
+        email: "",
+        contact: ""
+    }
 },
 
 {
@@ -266,7 +430,17 @@ places:3,
 prix:30445,
 photo:"images/transit-l2.jpg",
 pdf:"docs/transit-l2.pdf",
-description:"Fourgon L2."
+description:"Fourgon L2.",
+    modeleExact: "",
+    equipements: [],
+    avantages: [],
+    garage: {
+        nom: "",
+        adresse: "",
+        telephone: "",
+        email: "",
+        contact: ""
+    }
 },
 
 {
@@ -280,7 +454,17 @@ places:3,
 prix:33095,
 photo:"images/transit-l3.jpg",
 pdf:"docs/transit-l3.pdf",
-description:"Fourgon L3."
+description:"Fourgon L3.",
+    modeleExact: "",
+    equipements: [],
+    avantages: [],
+    garage: {
+        nom: "",
+        adresse: "",
+        telephone: "",
+        email: "",
+        contact: ""
+    }
 },
 
 /* ===========================
@@ -302,7 +486,17 @@ prix:29289,
 photo:"images/peugeot-e208.jpg",
 pdf:"docs/peugeot-e208.pdf",
 energie: "Electrique",
-description:"Citadine électrique de fonction."
+description:"Citadine électrique de fonction.",
+    modeleExact: "",
+    equipements: [],
+    avantages: [],
+    garage: {
+        nom: "",
+        adresse: "",
+        telephone: "",
+        email: "",
+        contact: ""
+    }
 },
 
 {
@@ -320,7 +514,17 @@ prix:31059,
 coffre:434,
 photo:"images/peugeot-e2008.jpg",
 pdf:"docs/peugeot-e2008.pdf",
-description:"SUV compact électrique."
+description:"SUV compact électrique.",
+    modeleExact: "",
+    equipements: [],
+    avantages: [],
+    garage: {
+        nom: "",
+        adresse: "",
+        telephone: "",
+        email: "",
+        contact: ""
+    }
 },
 {
 id:23,
@@ -334,7 +538,17 @@ places:5,
 prix:36566,
 photo:"images/peugeot308SW.jpg",
 pdf:"docs/Peugeot 308SW BEV.pdf",
-description:"Version électrique."
+description:"Version électrique.",
+    modeleExact: "",
+    equipements: [],
+    avantages: [],
+    garage: {
+        nom: "",
+        adresse: "",
+        telephone: "",
+        email: "",
+        contact: ""
+    }
 },
 
 {
@@ -351,7 +565,17 @@ loyer:716,
 prix:40983,
 photo:"images/scenic.jpg",
 pdf:"docs/scenic.pdf",
-description:"SUV électrique grande autonomie."
+description:"SUV électrique grande autonomie.",
+    modeleExact: "",
+    equipements: [],
+    avantages: [],
+    garage: {
+        nom: "",
+        adresse: "",
+        telephone: "",
+        email: "",
+        contact: ""
+    }
 },
 
 {
@@ -368,7 +592,17 @@ loyer:728,
 prix:37214,
 photo:"images/explorer.jpg",
 pdf:"docs/explorer.pdf",
-description:"SUV électrique Ford."
+description:"SUV électrique Ford.",
+    modeleExact: "",
+    equipements: [],
+    avantages: [],
+    garage: {
+        nom: "",
+        adresse: "",
+        telephone: "",
+        email: "",
+        contact: ""
+    }
 },
 
 ];

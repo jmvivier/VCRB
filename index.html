@@ -2000,39 +2000,42 @@
         }
 
 
-        /* Grand aperçu uniquement au survol de la photo dans la fiche véhicule */
-        #modalHoverPreview {
-            position: fixed;
-            top: 0;
-            right: 0;
-            width: 45vw;
-            height: 55vh;
-            min-width: 500px;
-            min-height: 400px;
-            max-width: 100vw;
-            max-height: 100vh;
-            z-index: 2000000;
-            padding: 24px;
-            object-fit: contain;
-            background: white;
-            border-left: 1px solid var(--border);
-            border-bottom: 1px solid var(--border);
-            border-bottom-left-radius: 18px;
-            box-shadow: -15px 18px 50px rgba(0,0,0,.22);
-            opacity: 0;
-            visibility: hidden;
-            pointer-events: none;
-            transition: opacity .18s ease, visibility .18s ease;
+
+        /* Informations détaillées de la fiche véhicule */
+        .vehicle-details {
+            margin-top: 24px;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
         }
-        #modalHoverPreview.visible {
-            opacity: 1;
-            visibility: visible;
+        .vehicle-detail-section {
+            padding: 20px;
+            background: #fafafa;
+            border: 1px solid var(--border);
+            border-radius: 12px;
         }
-        .modal-image.has-extra-photo {
-            cursor: zoom-in;
+        .vehicle-detail-section h3 {
+            font-size: 16px;
+            margin-bottom: 12px;
+            color: var(--crb-red-dark);
+        }
+        .vehicle-detail-section ul {
+            padding-left: 20px;
+            line-height: 1.7;
+        }
+        .vehicle-detail-section li + li { margin-top: 5px; }
+        .vehicle-detail-section p + p { margin-top: 6px; }
+        .vehicle-detail-section a { overflow-wrap: anywhere; }
+        .vehicle-detail-section.garage-section { grid-column: 1 / -1; }
+        .vehicle-model-exact {
+            font-size: 13px;
+            font-weight: 700;
+            margin: 0 0 16px;
+            color: #34445a;
         }
         @media (max-width: 650px) {
-            #modalHoverPreview { display: none !important; }
+            .vehicle-details { grid-template-columns: 1fr; }
+            .vehicle-detail-section.garage-section { grid-column: auto; }
         }
 
     </style>
@@ -2860,6 +2863,33 @@
            MODAL
         ========================================================= */
 
+
+        function renderDetailList(title, items, limit) {
+            if (!Array.isArray(items)) return "";
+            const values = items.filter(item => typeof item === "string" && item.trim()).slice(0, limit);
+            if (!values.length) return "";
+            return `<section class="vehicle-detail-section">
+                <h3>${escapeHtml(title)}</h3>
+                <ul>${values.map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
+            </section>`;
+        }
+
+        function renderGarage(garage) {
+            if (!garage || typeof garage !== "object") return "";
+            const fields = [
+                ["Garage", garage.nom],
+                ["Adresse", garage.adresse],
+                ["Téléphone", garage.telephone],
+                ["E-mail", garage.email],
+                ["Personne de contact", garage.contact]
+            ].filter(([, value]) => value !== undefined && value !== null && String(value).trim());
+            if (!fields.length) return "";
+            return `<section class="vehicle-detail-section garage-section">
+                <h3>Garage fournisseur — adresse et contact</h3>
+                ${fields.map(([label, value]) => `<p><strong>${escapeHtml(label)} :</strong> ${escapeHtml(value)}</p>`).join("")}
+            </section>`;
+        }
+
         function openModal(vehicle) {
 
             if (!vehicle) {
@@ -2939,6 +2969,9 @@
                             Fiche véhicule de la flotte
                             de la Croix-Rouge de Belgique.
                         </p>
+                        ${vehicle.modeleExact && String(vehicle.modeleExact).trim()
+                            ? `<p class="vehicle-model-exact"><strong>Modèle exact :</strong> ${escapeHtml(vehicle.modeleExact)}</p>`
+                            : ""}
 
 
                         <div class="modal-specs">
@@ -3108,23 +3141,14 @@
 
                 </div>
 
+                <div class="vehicle-details">
+                    ${renderDetailList("10 équipements principaux", vehicle.equipements, 10)}
+                    ${renderDetailList("5 avantages", vehicle.avantages, 5)}
+                    ${renderGarage(vehicle.garage)}
+                </div>
+
             `;
 
-
-            // L'aperçu grand format ne s'active que dans la fiche véhicule.
-            const preview = document.getElementById("modalHoverPreview");
-            const photoArea = modalBody.querySelector(".modal-image");
-            if (photoArea && vehicle.photoHover && preview) {
-                photoArea.classList.add("has-extra-photo");
-                photoArea.addEventListener("mouseenter", () => {
-                    preview.src = vehicle.photoHover;
-                    preview.alt = "Autre vue - " + (vehicle.nom || "Véhicule");
-                    preview.classList.add("visible");
-                });
-                photoArea.addEventListener("mouseleave", () => {
-                    preview.classList.remove("visible");
-                });
-            }
 
             modal.classList.add(
                 "visible"
@@ -3148,7 +3172,6 @@
 
         function closeModal() {
 
-            document.getElementById("modalHoverPreview")?.classList.remove("visible");
 
             modal.classList.remove(
                 "visible"
@@ -3255,8 +3278,6 @@
         renderCards();
 
     </script>
-
-    <img id="modalHoverPreview" src="" alt="Photo supplémentaire du véhicule">
 </body>
 
 </html>
