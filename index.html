@@ -2038,7 +2038,65 @@
             .vehicle-detail-section.garage-section { grid-column: auto; }
         }
 
-    </style>
+    
+/* Fiche véhicule VCRB — interface modernisée */
+#modal .modal-content {width:min(1160px, 100%); max-height:min(92vh, 1000px); border-radius:22px; background:#fff;}
+#modal #modalClose {top:17px;right:17px;background:#f0f2f5;color:#293244;box-shadow:0 1px 4px #0001;}
+#modal #modalClose:hover {background:#e3e7ed;}
+.vcrb-detail {padding:30px 30px 36px;color:#17212e;}
+.vcrb-detail-top {display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,1fr);gap:34px;align-items:start;}
+.vcrb-photo-card {background:#f4f6f8;border:1px solid #e8ebef;border-radius:18px;overflow:hidden;}
+.vcrb-photo-stage {height:425px;display:flex;align-items:center;justify-content:center;padding:20px;background:radial-gradient(circle at 50% 45%,#fff 0%,#f0f2f5 80%);}
+.vcrb-photo-stage img {width:100%;height:100%;object-fit:contain;}
+.vcrb-photo-footer {padding:12px 18px;border-top:1px solid #e7eaee;font-size:12px;color:#7b8490;display:flex;align-items:center;gap:8px;}
+.vcrb-photo-dot {width:7px;height:7px;background:#db0013;border-radius:50%;}
+.vcrb-detail-info {padding:13px 20px 0 0;min-width:0;}
+.vcrb-eyebrow {display:flex;flex-wrap:wrap;align-items:center;gap:9px;font-size:10px;font-weight:850;letter-spacing:.12em;color:#7c8695;}
+.vcrb-eyebrow-mark {width:19px;height:3px;background:#df0017;border-radius:2px;}
+.vcrb-category-pill {letter-spacing:0;background:#fff0f1;color:#cb0014;padding:7px 11px;border-radius:999px;font-size:11px;}
+.vcrb-detail-info h2 {font-size:clamp(25px,2.6vw,35px);line-height:1.12;letter-spacing:-.035em;margin:17px 0 17px;font-weight:850;overflow-wrap:anywhere;}
+.vcrb-exact-model {border-left:3px solid #e00018;background:#f8f9fb;border-radius:0 10px 10px 0;padding:11px 14px;margin:0 0 23px;}
+.vcrb-exact-model small {font-size:10px;font-weight:850;letter-spacing:.09em;color:#87909b;}
+.vcrb-exact-model p {font-size:13px;font-weight:700;line-height:1.5;margin:5px 0 0;color:#394455;}
+.vcrb-section-kicker {font-size:12px;font-weight:850;margin:0 0 12px;color:#313b4a;}
+.vcrb-stats {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;}
+.vcrb-stat {display:flex;align-items:center;gap:12px;min-height:68px;padding:12px;border:1px solid #e8ebef;border-radius:12px;background:#fff;}
+.vcrb-stat-icon {display:flex;align-items:center;justify-content:center;width:34px;height:34px;flex:none;border-radius:9px;background:#f5f6f8;color:#d70019;font-size:17px;font-weight:800;}
+.vcrb-stat small {display:block;font-size:10px;font-weight:750;text-transform:uppercase;letter-spacing:.045em;color:#838b96;}
+.vcrb-stat strong {display:block;margin-top:3px;font-size:14px;overflow-wrap:anywhere;line-height:1.35;}
+.vcrb-documents {margin-top:22px;}
+.vcrb-actions {display:flex;flex-wrap:wrap;gap:10px;}
+.vcrb-action {display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:13px 16px;border-radius:10px;text-decoration:none;font-size:12px;font-weight:800;box-shadow:0 3px 8px #00000010;transition:transform .15s,box-shadow .15s;}
+.vcrb-action:hover {transform:translateY(-2px);box-shadow:0 5px 14px #00000020;}
+.vcrb-action-main {background:#db0018;color:#fff;}
+.vcrb-action-secondary {background:#31445d;color:#fff;}
+.vcrb-section-title {display:flex;align-items:center;gap:16px;margin:33px 0 17px;font-size:17px;font-weight:850;letter-spacing:-.02em;}
+.vcrb-section-rule {height:1px;flex:1;background:#e5e8ec;}
+.vcrb-lists {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:stretch;}
+.vcrb-panel {border:1px solid #e6e9ed;border-radius:15px;background:#fff;padding:21px 22px;min-width:0;}
+.vcrb-panel-advantages {background:#fcfcfd;}
+.vcrb-panel-heading {display:flex;align-items:center;gap:9px;margin-bottom:15px;}
+.vcrb-panel-symbol {display:flex;align-items:center;justify-content:center;width:28px;height:28px;background:#fff0f1;color:#d40017;border-radius:8px;font-weight:850;}
+.vcrb-panel-heading h3 {font-size:15px;margin:0;flex:1;color:#182332;}
+.vcrb-count {background:#f1f3f5;color:#78818c;border-radius:999px;padding:3px 8px;font-size:11px;font-weight:800;}
+.vcrb-check-list {list-style:none!important;padding:0!important;margin:0!important;display:grid;gap:12px;}
+.vcrb-check-list li {display:flex;align-items:flex-start;gap:10px;font-size:13px;line-height:1.55;color:#424b59;}
+.vcrb-list-icon {color:#d40017;font-size:14px;font-weight:900;line-height:1.55;flex:none;}
+.vcrb-garage-inner {border:1px solid #e6e9ed;border-radius:15px;overflow:hidden;background:#fafbfc;}
+.vcrb-garage-intro {display:flex;align-items:center;gap:14px;padding:18px 22px;background:#f4f6f8;border-bottom:1px solid #e7eaee;}
+.vcrb-garage-emblem {display:flex;align-items:center;justify-content:center;width:42px;height:42px;background:#fff;border:1px solid #e7eaee;border-radius:12px;font-size:25px;color:#d50018;}
+.vcrb-garage-intro small {display:block;color:#7c8592;font-size:11px;font-weight:700;}
+.vcrb-garage-intro h3 {margin:4px 0 0;font-size:16px;color:#1a2634;}
+.vcrb-garage-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:19px 24px;padding:23px;}
+.vcrb-garage-item {display:flex;align-items:flex-start;gap:11px;min-width:0;}
+.vcrb-garage-item>span {font-size:19px;color:#d50018;line-height:1.2;}
+.vcrb-garage-item small {display:block;font-size:11px;color:#818b98;margin-bottom:4px;}
+.vcrb-garage-item strong,.vcrb-garage-item a {font-size:13px;color:#263344;font-weight:700;line-height:1.5;overflow-wrap:anywhere;}
+.vcrb-garage-item a {color:#bb0016;text-decoration:underline;text-underline-offset:3px;}
+@media(max-width:850px){.vcrb-detail-top{grid-template-columns:1fr;gap:19px}.vcrb-photo-stage{height:330px}.vcrb-detail-info{padding:0}.vcrb-detail{padding:22px}.vcrb-detail-info h2{font-size:29px}.vcrb-section-title{margin-top:25px}}
+@media(max-width:600px){#modal{padding:8px}#modal .modal-content{max-height:96dvh;border-radius:16px}.vcrb-detail{padding:17px}.vcrb-photo-stage{height:240px;padding:12px}.vcrb-detail-info h2{font-size:25px;padding-right:20px}.vcrb-lists,.vcrb-garage-grid{grid-template-columns:1fr}.vcrb-panel{padding:17px}.vcrb-stats{gap:8px}.vcrb-stat{padding:9px;gap:8px;min-height:61px}.vcrb-stat-icon{width:29px;height:29px}.vcrb-stat strong{font-size:12px}.vcrb-actions{flex-direction:column}.vcrb-action{width:100%}}
+
+</style>
 
 </head>
 
@@ -2864,307 +2922,77 @@
         ========================================================= */
 
 
-        function renderDetailList(title, items, limit) {
+        function renderDetailList(title, items, limit, kind) {
             if (!Array.isArray(items)) return "";
             const values = items.filter(item => typeof item === "string" && item.trim()).slice(0, limit);
             if (!values.length) return "";
-            return `<section class="vehicle-detail-section">
-                <h3>${escapeHtml(title)}</h3>
-                <ul>${values.map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
+            const icon = kind === "advantages" ? "✦" : "✓";
+            return `<section class="vcrb-panel ${kind === "advantages" ? "vcrb-panel-advantages" : ""}">
+                <div class="vcrb-panel-heading"><span class="vcrb-panel-symbol">${icon}</span><h3>${escapeHtml(title)}</h3><span class="vcrb-count">${values.length}</span></div>
+                <ul class="vcrb-check-list">${values.map(item => `<li><span class="vcrb-list-icon" aria-hidden="true">${icon}</span><span>${escapeHtml(item)}</span></li>`).join("")}</ul>
             </section>`;
         }
 
         function renderGarage(garage) {
             if (!garage || typeof garage !== "object") return "";
-            const fields = [
-                ["Garage", garage.nom],
-                ["Adresse", garage.adresse],
-                ["Téléphone", garage.telephone],
-                ["E-mail", garage.email],
-                ["Personne de contact", garage.contact]
-            ].filter(([, value]) => value !== undefined && value !== null && String(value).trim());
-            if (!fields.length) return "";
-            return `<section class="vehicle-detail-section garage-section">
-                <h3>Garage fournisseur — adresse et contact</h3>
-                ${fields.map(([label, value]) => `<p><strong>${escapeHtml(label)} :</strong> ${escapeHtml(value)}</p>`).join("")}
-            </section>`;
+            const clean = key => garage[key] == null ? "" : String(garage[key]).trim();
+            if (!["nom", "adresse", "telephone", "email", "contact"].some(clean)) return "";
+            const phone = clean("telephone");
+            const email = clean("email");
+            const telHref = phone.replace(/[^+\d]/g, "");
+            const contactItems = [
+                clean("adresse") ? `<div class="vcrb-garage-item"><span aria-hidden="true">⌖</span><div><small>Adresse</small><strong>${escapeHtml(clean("adresse"))}</strong></div></div>` : "",
+                phone ? `<div class="vcrb-garage-item"><span aria-hidden="true">☎</span><div><small>Téléphone</small><a href="tel:${escapeHtml(telHref)}">${escapeHtml(phone)}</a></div></div>` : "",
+                email ? `<div class="vcrb-garage-item"><span aria-hidden="true">✉</span><div><small>E-mail</small><a href="mailto:${escapeHtml(email)}">${escapeHtml(email)}</a></div></div>` : "",
+                clean("contact") ? `<div class="vcrb-garage-item"><span aria-hidden="true">♙</span><div><small>Personne de contact</small><strong>${escapeHtml(clean("contact"))}</strong></div></div>` : ""
+            ].filter(Boolean).join("");
+            return `<section class="vcrb-garage-panel"><div class="vcrb-section-title"><span>Garage & contact</span><span class="vcrb-section-rule"></span></div>
+                <div class="vcrb-garage-inner"><div class="vcrb-garage-intro"><div class="vcrb-garage-emblem">⌖</div><div><small>Garage fournisseur</small><h3>${escapeHtml(clean("nom") || "Coordonnées du garage")}</h3></div></div>
+                <div class="vcrb-garage-grid">${contactItems}</div></div></section>`;
         }
 
         function openModal(vehicle) {
-
-            if (!vehicle) {
-                return;
-            }
-
-
-            const vehiclePdf =
-                vehicle.pdf ||
-                vehicle.vehiclePdf ||
-                (
-                    vehicle.id
-                        ? `pdf/vehicules/vehicule-${vehicle.id}.pdf`
-                        : ""
-                );
-
-
-            const amenagementPdf =
-                vehicle.amenagementPdf ||
-                (
-                    vehicle.id
-                        ? `pdf/amenagement/vehicule-${vehicle.id}.pdf`
-                        : ""
-                );
-
-
+            if (!vehicle) return;
+            const vehiclePdf = vehicle.pdf || vehicle.vehiclePdf || (vehicle.id ? `pdf/vehicules/vehicule-${vehicle.id}.pdf` : "");
+            const amenagementPdf = vehicle.amenagementPdf || (vehicle.id ? `pdf/amenagement/vehicule-${vehicle.id}.pdf` : "");
+            const specs = [
+                ["Énergie", vehicle.energie, "⚡"],
+                ["Puissance", vehicle.puissance, "◈"],
+                ["Places", vehicle.places, "♙"],
+                ["Autonomie", vehicle.autonomie, "↗"],
+                ["Prix", vehicle.prix, "€"],
+                ["ATN", vehicle.atn, "▤"]
+            ].filter(([, value]) => value !== undefined && value !== null && String(value).trim() && String(value).trim() !== "—");
+            const specsHtml = specs.map(([label, value, icon]) => `<div class="vcrb-stat"><span class="vcrb-stat-icon" aria-hidden="true">${icon}</span><div><small>${escapeHtml(label)}</small><strong>${escapeHtml(String(value))}</strong></div></div>`).join("");
+            const buttons = [
+                vehiclePdf ? `<a href="${escapeHtml(vehiclePdf)}" target="_blank" rel="noopener" class="vcrb-action vcrb-action-main">▤ &nbsp; Fiche véhicule <span aria-hidden="true">↗</span></a>` : "",
+                amenagementPdf ? `<a href="${escapeHtml(amenagementPdf)}" target="_blank" rel="noopener" class="vcrb-action vcrb-action-secondary">▱ &nbsp; Aménagement <span aria-hidden="true">↗</span></a>` : ""
+            ].filter(Boolean).join("");
+            const hasLists = (Array.isArray(vehicle.equipements) && vehicle.equipements.some(Boolean)) || (Array.isArray(vehicle.avantages) && vehicle.avantages.some(Boolean));
             modalBody.innerHTML = `
-
-                <div class="modal-layout">
-
-
-                    <div class="modal-image">
-
-                        <img
-                            src="${escapeHtml(
-                                vehicle.photo || ""
-                            )}"
-                            alt="${escapeHtml(
-                                vehicle.nom ||
-                                "Véhicule"
-                            )}"
-                            onerror="imageFallback(this)"
-                        >
-
-                    </div>
-
-
-                    <div class="modal-info">
-
-
-                        ${
-                            vehicle.categorie
-                                ? `
-
-                                    <span
-                                        class="modal-category"
-                                    >
-                                        ${escapeHtml(
-                                            vehicle.categorie
-                                        )}
-                                    </span>
-
-                                `
-                                : ""
-                        }
-
-
-                        <h2>
-                            ${escapeHtml(
-                                vehicle.nom ||
-                                "Véhicule"
-                            )}
-                        </h2>
-
-
-                        <p>
-                            Fiche véhicule de la flotte
-                            de la Croix-Rouge de Belgique.
-                        </p>
-                        ${vehicle.modeleExact && String(vehicle.modeleExact).trim()
-                            ? `<p class="vehicle-model-exact"><strong>Modèle:</strong> ${escapeHtml(vehicle.modeleExact)}</p>`
-                            : ""}
-
-
-                        <div class="modal-specs">
-
-
-                            <div class="modal-spec">
-
-                                <span>
-                                    Énergie
-                                </span>
-
-                                <strong>
-                                    ${escapeHtml(
-                                        vehicle.energie ||
-                                        "—"
-                                    )}
-                                </strong>
-
-                            </div>
-
-			<div class="modal-spec">
-
-                                <span>
-                                    prix
-                                </span>
-
-                                <strong>
-                                    ${escapeHtml(
-                                        vehicle.prix ||
-                                        "—"
-                                    )}
-                                </strong>
-
-                            </div>
-
-                            <div class="modal-spec">
-
-                                <span>
-                                    Autonomie
-                                </span>
-
-                                <strong>
-                                    ${escapeHtml(
-                                        vehicle.autonomie ||
-                                        "—"
-                                    )}
-                                </strong>
-
-                            </div>
-
-
-                            <div class="modal-spec">
-
-                                <span>
-                                    Puissance
-                                </span>
-
-                                <strong>
-                                    ${escapeHtml(
-                                        vehicle.puissance ||
-                                        "—"
-                                    )}
-                                </strong>
-
-                            </div>
-
-
-                            <div class="modal-spec">
-
-                                <span>
-                                    Places
-                                </span>
-
-                                <strong>
-                                    ${escapeHtml(
-                                        vehicle.places ||
-                                        "—"
-                                    )}
-                                </strong>
-
-                            </div>
-
-
-                            <div class="modal-spec">
-
-                                <span>
-                                    ATN
-                                </span>
-
-                                <strong>
-                                    ${escapeHtml(
-                                        vehicle.atn ||
-                                        "—"
-                                    )}
-                                </strong>
-
-                            </div>
-
-
-                            <div class="modal-spec">
-
-                                <span>
-                                    Catégorie
-                                </span>
-
-                                <strong>
-                                    ${escapeHtml(
-                                        vehicle.categorie ||
-                                        "—"
-                                    )}
-                                </strong>
-
-                            </div>
-
-
+                <div class="vcrb-detail">
+                    <div class="vcrb-detail-top">
+                        <div class="vcrb-photo-card">
+                            <div class="vcrb-photo-stage"><img src="${escapeHtml(vehicle.photo || "")}" alt="${escapeHtml(vehicle.nom || "Véhicule")}" onerror="imageFallback(this)"></div>
+                            <div class="vcrb-photo-footer"><span class="vcrb-photo-dot"></span> Photo du véhicule</div>
                         </div>
-
-
-                        <div class="modal-actions">
-
-
-                            ${
-                                vehiclePdf
-                                    ? `
-
-                                        <a
-                                            href="${escapeHtml(
-                                                vehiclePdf
-                                            )}"
-                                            target="_blank"
-                                            rel="noopener"
-                                            class="primary"
-                                        >
-                                            📄 Fiche véhicule
-                                        </a>
-
-                                    `
-                                    : ""
-                            }
-
-
-                            ${
-                                amenagementPdf
-                                    ? `
-
-                                        <a
-                                            href="${escapeHtml(
-                                                amenagementPdf
-                                            )}"
-                                            target="_blank"
-                                            rel="noopener"
-                                            class="amenagement"
-                                        >
-                                            📐 Aménagement
-                                        </a>
-
-                                    `
-                                    : ""
-                            }
-
-
+                        <div class="vcrb-detail-info">
+                            <div class="vcrb-eyebrow"><span class="vcrb-eyebrow-mark"></span> CATALOGUE AUTOMOBILE <span class="vcrb-category-pill">${escapeHtml(vehicle.categorie || "Véhicule")}</span></div>
+                            <h2>${escapeHtml(vehicle.nom || "Véhicule")}</h2>
+                            ${vehicle.modeleExact && String(vehicle.modeleExact).trim() ? `<div class="vcrb-exact-model"><small>MODÈLE EXACT</small><p>${escapeHtml(vehicle.modeleExact)}</p></div>` : ""}
+                            ${specsHtml ? `<div class="vcrb-section-kicker">Caractéristiques principales</div><div class="vcrb-stats">${specsHtml}</div>` : ""}
+                            ${buttons ? `<div class="vcrb-documents"><div class="vcrb-section-kicker">Documents à consulter</div><div class="vcrb-actions">${buttons}</div></div>` : ""}
                         </div>
-
-
                     </div>
-
-
-                </div>
-
-                <div class="vehicle-details">
-                    ${renderDetailList("Equipements principaux", vehicle.equipements, 10)}
-                    ${renderDetailList("Remarques", vehicle.avantages, 5)}
+                    ${hasLists ? `<div class="vcrb-section-title"><span>Équipements & points forts</span><span class="vcrb-section-rule"></span></div><div class="vcrb-lists">${renderDetailList("Équipements principaux", vehicle.equipements, 10, "equipment")}${renderDetailList("Avantages & remarques", vehicle.avantages, 5, "advantages")}</div>` : ""}
                     ${renderGarage(vehicle.garage)}
-                </div>
-
-            `;
-
-
-            modal.classList.add(
-                "visible"
-            );
-
-
-            modal.setAttribute(
-                "aria-hidden",
-                "false"
-            );
-
-
-            document.body.style.overflow =
-                "hidden";
+                </div>`;
+            modal.classList.add("visible");
+            modal.setAttribute("aria-hidden", "false");
+            document.body.style.overflow = "hidden";
+            const content = modal.querySelector(".modal-content");
+            if (content) content.scrollTop = 0;
         }
-
 
         /* =========================================================
            FERMER MODAL
