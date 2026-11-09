@@ -167,7 +167,7 @@ description:"Version électrique.",
     // Source : catalogue véhicule CRB 2026-2027, diapositive 9.
     modeleExact: "FORD V769 Tourneo Courier Titanium BEV 43 kWh 136 ch / 100 kW A1",
     equipements: ["Équipements de sécurité complets", "Caméra et capteurs avant/arrière disponibles", "Détecteur d’angle mort", "Climatisation automatique Titanium", "Navigation et CarPlay / Android Auto", "Feux et essuie-glaces automatiques", "Transmission automatique A1", "Sellerie tissu", "Réglages des sièges 6/4 directions", "USB avant/arrière et connectivité smartphone"],
-    avantages: ["Flocage réalisé chez Ford via Vektor"],
+    avantages: ["Flocage réalisé chez Ford via Vektor", "Dimensions extérieures (L × l × H, hors rétroviseurs) : 4,337 m × 1,800 m × 1,836 m", "Empattement : 2,692 m ; longueur utile : 1 492 mm ; PTAC : 2 000 kg"],
     garage: {
         "nom": "Spirlet Automobiles (Ford)",
         "adresse": "Rue Haroun Tazieff 10, 4032 Chênée",
@@ -249,7 +249,7 @@ description:"Ludospace compact.",
     // Source : catalogue véhicule CRB 2026-2027, diapositive 10.
     modeleExact: "FORD V769 Tourneo Courier Titanium 1.0 EcoBoost 125 ch / 92 kW A7",
     equipements: ["Équipements de sécurité complets", "Caméra et capteurs avant/arrière disponibles", "Détecteur d’angle mort", "Climatisation automatique Titanium", "Navigation et CarPlay / Android Auto", "Feux et essuie-glaces automatiques", "Transmission automatique A1", "Sellerie tissu", "Réglages des sièges 6/4 directions", "USB avant/arrière et connectivité smartphone"],
-    avantages: ["Flocage réalisé chez Ford via Vektor"],
+    avantages: ["Flocage réalisé chez Ford via Vektor", "Dimensions extérieures (L × l × H, hors rétroviseurs) : 4,337 m × 1,800 m × 1,836 m", "Empattement : 2,692 m ; longueur utile : 1 492 mm ; PTAC : 2 000 kg"],
     garage: {
         "nom": "Spirlet Automobiles (Ford)",
         "adresse": "Rue Haroun Tazieff 10, 4032 Chênée",
@@ -275,7 +275,7 @@ description:"Version électrique.",
     // Source : catalogue véhicule CRB 2026-2027, diapositive 9.
     modeleExact: "FORD V769 Tourneo Courier Titanium BEV 43 kWh 136 ch / 100 kW A1",
     equipements: ["Équipements de sécurité complets", "Caméra et capteurs avant/arrière disponibles", "Détecteur d’angle mort", "Climatisation automatique Titanium", "Navigation et CarPlay / Android Auto", "Feux et essuie-glaces automatiques", "Transmission automatique A1", "Sellerie tissu", "Réglages des sièges 6/4 directions", "USB avant/arrière et connectivité smartphone"],
-    avantages: ["Flocage réalisé chez Ford via Vektor"],
+    avantages: ["Flocage réalisé chez Ford via Vektor", "Dimensions extérieures (L × l × H, hors rétroviseurs) : 4,337 m × 1,800 m × 1,836 m", "Empattement : 2,692 m ; longueur utile : 1 492 mm ; PTAC : 2 000 kg"],
     garage: {
         "nom": "Spirlet Automobiles (Ford)",
         "adresse": "Rue Haroun Tazieff 10, 4032 Chênée",
@@ -300,7 +300,7 @@ description:"Version courte.",
     // Source : catalogue véhicule CRB 2026-2027, diapositive 11.
     modeleExact: "FORD Transit Custom V710 Kombi M1 320S Trend 2.0 TDCi 136 ch / 100 kW A8 FWD SWB",
     equipements: ["ABS / ESP et airbags", "Caméra 360° et aide au stationnement", "Détecteur d’angle mort et alerte trafic transversal", "Climatisation automatique", "Navigation et Bluetooth", "Feux et essuie-glaces automatiques", "Boîte automatique A8", "Sellerie vinyle", "Réglages du siège conducteur", "Attelage fixe inclus"],
-    avantages: ["Flocage réalisé chez Ford via Vektor"],
+    avantages: ["Flocage réalisé chez Ford via Vektor", "Dimensions extérieures (L × l × H, hors rétroviseurs) : 5,05 m × 2,00 m × 1,95–1,96 m", "Empattement : 3,10 m ; longueur utile : 2 647 mm ; PTAC : 3 225 kg"],
     garage: {
         "nom": "Spirlet Automobiles (Ford)",
         "adresse": "Rue Haroun Tazieff 10, 4032 Chênée",
@@ -325,7 +325,7 @@ description:"Version longue.",
     // Source : catalogue véhicule CRB 2026-2027, diapositive 12.
     modeleExact: "FORD Transit Custom V710 Kombi 320L Trend 2.0 TDCi 136 ch / 100 kW A8 FWD LWB",
     equipements: ["ABS / ESP et airbags", "Caméra 360° et aide au stationnement", "Détecteur d’angle mort et alerte trafic transversal", "Climatisation automatique", "Navigation et Bluetooth", "Feux et essuie-glaces automatiques", "Boîte automatique A8", "Sellerie vinyle", "Réglages du siège conducteur", "Attelage fixe inclus"],
-    avantages: ["Flocage réalisé chez Ford via Vektor"],
+    avantages: ["Flocage réalisé chez Ford via Vektor", "Dimensions extérieures (L × l × H, hors rétroviseurs) : 5,45 m × 2,28 m × 1,96 m", "Empattement : 3,50 m ; longueur utile : 3 002 mm ; PTAC : 3 225 kg"],
     garage: {
         "nom": "Spirlet Automobiles (Ford)",
         "adresse": "Rue Haroun Tazieff 10, 4032 Chênée",
@@ -350,7 +350,7 @@ description:"Version hybride rechargeable.",
     // Source : catalogue véhicule CRB 2026-2027, diapositive 13.
     modeleExact: "FORD Transit Custom V710 Kombi M1 340L Trend PHEV 2.5 232 ch / 171 kW",
     equipements: ["ABS / ESP et airbags", "Caméra 360° et aide au stationnement", "Détecteur d’angle mort et alerte trafic transversal", "Climatisation automatique", "Navigation et Bluetooth", "Feux et essuie-glaces automatiques", "Boîte automatique A8", "Sellerie vinyle", "Réglages du siège conducteur", "Attelage fixe inclus"],
-    avantages: ["Flocage réalisé chez Ford via Vektor"],
+    avantages: ["Flocage réalisé chez Ford via Vektor", "Dimensions extérieures (L × l × H, hors rétroviseurs) : 5,45 m × 2,00–2,03 m × 1,96 m", "Empattement : 3,50 m ; longueur utile : 3 047 mm ; PTAC : ≈ 3 400 kg"],
     garage: {
         "nom": "Spirlet Automobiles (Ford)",
         "adresse": "Rue Haroun Tazieff 10, 4032 Chênée",
@@ -380,7 +380,7 @@ description:"Utilitaire compact.",
     // Source : catalogue véhicule CRB 2026-2027, diapositive 28.
     modeleExact: "Volkswagen Caddy Cargo Maxi 1.5 TSI DSG 115 ch (85 kW)",
     equipements: ["Porte latérale coulissante droite dans le compartiment de chargement", "Portes arrière battantes sans vitres, division asymétrique", "Allumage automatique des projecteurs et feux de jour", "Start/Stop avec récupération d’énergie au freinage", "Écran tactile couleur 10 pouces", "Deux ports USB-C à l’avant", "Cloison de séparation haute sans fenêtre", "Revêtement de sol en caoutchouc dans le compartiment de charge"],
-    avantages: [],
+    avantages: ["Dimensions extérieures (L × l × H, hors rétroviseurs) : 4,853 m × 1,855 m × 1,860 m", "Empattement : 2,970 m ; longueur utile : 2 150 mm ; PTAC : 2 250 kg"],
     garage: {
         "nom": "D’Ieteren Auto — Public Affairs",
         "adresse": "Arthur De Coninckstraat 3, 3071 Kortenberg",
@@ -406,7 +406,7 @@ description:"Utilitaire compact électrique.",
     // Source : catalogue véhicule CRB 2026-2027, diapositive 27.
     modeleExact: "Toyota Proace City EV Panel Van SWB Full Electric 50 kWh 136 hp Comfort",
     equipements: ["Portes latérales coulissantes droite et gauche", "Régulateur et limiteur de vitesse", "Alerte de franchissement de ligne", "Reconnaissance des panneaux", "Écran central 8 ou 10 pouces", "Bluetooth", "Prises USB", "Compatibilité MirrorLink / smartphone", "Climatisation manuelle"],
-    avantages: [],
+    avantages: ["Dimensions extérieures (L × l × H, hors rétroviseurs) : 4,403 m × 1,848 m × 1,880 m", "Empattement : 2,785 m ; longueur utile : 1 781 mm ; PTAC : 2 390 kg"],
     garage: {
         "nom": "Garage Gégo — Toyota Namur",
         "adresse": "Chaussée de Marche 718, 5100 Naninne (Namur)",
@@ -431,7 +431,7 @@ description:"Utilitaire électrique.",
     // Source : catalogue véhicule CRB 2026-2027, diapositive 29.
     modeleExact: "Toyota Proace EV Medium Full Electric 75 kWh E-Toggle Comfort",
     equipements: ["Portes latérales coulissantes droite et gauche", "Régulateur et limiteur de vitesse", "Alerte de franchissement de ligne", "Reconnaissance des panneaux", "Écran central 8 ou 10 pouces", "Bluetooth", "Prises USB", "Compatibilité MirrorLink / smartphone", "Climatisation manuelle"],
-    avantages: [],
+    avantages: ["Dimensions extérieures (L × l × H, hors rétroviseurs) : 4,96 m × 1,92 m × 1,90 m", "Empattement : 3,28 m ; longueur utile : 2 512 mm ; PTAC : 3 025 kg"],
     garage: {
         "nom": "Garage Gégo — Toyota Namur",
         "adresse": "Chaussée de Marche 718, 5100 Naninne (Namur)",
@@ -456,7 +456,7 @@ description:"Fourgon L2.",
     // Source : catalogue véhicule CRB 2026-2027, diapositive 30.
     modeleExact: "FORD Transit 2T MCA 310M Fourgon tôlé L2 Trend A8 2.0 TD 130 ch / 96 kW",
     equipements: ["Système d’atténuation de collision", "Régulateur adaptatif avec Lane Centering et Stop & Go", "Aide au maintien dans la voie", "Reconnaissance des panneaux de vitesse", "Capteurs de stationnement arrière", "Assistance au freinage en marche arrière", "Projecteur LED au-dessus des portes arrière", "Système de navigation", "Détection d’obstacles dans les angles morts", "Caméra 360°"],
-    avantages: [],
+    avantages: ["Dimensions extérieures (L × l × H, hors rétroviseurs) : 5,531 m × 2,059 m × 2,49 m", "Empattement : 3,30 m ; longueur utile : 3 044 mm ; PTAC : 3 100 kg"],
     garage: {
         "nom": "Spirlet Automobiles (Ford)",
         "adresse": "Rue Haroun Tazieff 10, 4032 Chênée",
@@ -481,7 +481,7 @@ description:"Fourgon L3.",
     // Source : catalogue véhicule CRB 2026-2027, diapositive 31.
     modeleExact: "FORD Transit 2T MCA 350L Fourgon tôlé L3 Trend A8 2.0 TD 130 ch / 96 kW",
     equipements: ["Système d’atténuation de collision", "Régulateur adaptatif avec Lane Centering et Stop & Go", "Aide au maintien dans la voie", "Reconnaissance des panneaux de vitesse", "Capteurs de stationnement arrière", "Assistance au freinage en marche arrière", "Projecteur LED au-dessus des portes arrière", "Système de navigation", "Détection d’obstacles dans les angles morts", "Caméra 360°"],
-    avantages: [],
+    avantages: ["Dimensions extérieures (L × l × H, hors rétroviseurs) : 5,981 m × 2,059 m × 2,55 m", "Empattement : 3,75 m ; longueur utile : 3 494 mm ; PTAC : 3 500 kg"],
     garage: {
         "nom": "Spirlet Automobiles (Ford)",
         "adresse": "Rue Haroun Tazieff 10, 4032 Chênée",
