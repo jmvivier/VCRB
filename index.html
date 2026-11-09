@@ -2568,6 +2568,16 @@
             return vehicleList.filter(
                 vehicle => {
 
+                    // Ne pas publier les fiches de création encore vides.
+                    const vehicleName = String(vehicle.nom || "").trim();
+                    const isEmptyDraft =
+                        !vehicleName ||
+                        (vehicleName.toLowerCase() === "nouveau véhicule" &&
+                         !String(vehicle.photo || "").trim() &&
+                         !String(vehicle.modeleExact || "").trim());
+
+                    if (isEmptyDraft) return false;
+
                     const name =
                         String(
                             vehicle.nom || ""
