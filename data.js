@@ -30,8 +30,7 @@ const vehicles = [
     "avantages": [
       "Lettrage compris et intégré dans la commande",
       "Transport du véhicule vers la maison Croix-Rouge compris",
-      "Maintien en stock d’un véhicule prêt à être aménagé",
-      "Important: transmettre les informations sur le lettrage au moment de la commande"
+      "Maintien en stock d’un véhicule prêt à être aménagé"
     ],
     "garage": {
       "nom": "Spirlet Automobiles (Ford)",
@@ -715,7 +714,7 @@ const vehicles = [
     "autonomie": 443,
     "puissance": 151,
     "places": 5,
-    "prix": "36.566€",
+    "prix": 36566,
     "photo": "images/peugeot308SW.jpg",
     "pdf": "docs/Peugeot 308SW BEV.pdf",
     "description": "Version électrique.",
@@ -800,23 +799,5 @@ const vehicles = [
       "email": "info@spirletautomobiles.be",
       "contact": "Christophe VAN DER KELEN — 04/247.76.64 — christophe.vanderkelen@spirletautomobiles.be"
     }
-  },
-  {
-    "id": 25,
-    "nom": "Nouveau véhicule",
-    "categorie": "Service",
-    "modeleExact": "",
-    "equipements": [],
-    "avantages": [],
-    "garage": {
-      "nom": "",
-      "adresse": "",
-      "telephone": "",
-      "email": "",
-      "contact": ""
-    },
-    "puissance": "",
-    "prix": "",
-    "description": ""
   }
 ];
