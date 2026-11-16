@@ -2096,6 +2096,45 @@
 @media(max-width:850px){.vcrb-detail-top{grid-template-columns:1fr;gap:19px}.vcrb-photo-stage{height:330px}.vcrb-detail-info{padding:0}.vcrb-detail{padding:22px}.vcrb-detail-info h2{font-size:29px}.vcrb-section-title{margin-top:25px}}
 @media(max-width:600px){#modal{padding:8px}#modal .modal-content{max-height:96dvh;border-radius:16px}.vcrb-detail{padding:17px}.vcrb-photo-stage{height:240px;padding:12px}.vcrb-detail-info h2{font-size:25px;padding-right:20px}.vcrb-lists,.vcrb-garage-grid{grid-template-columns:1fr}.vcrb-panel{padding:17px}.vcrb-stats{gap:8px}.vcrb-stat{padding:9px;gap:8px;min-height:61px}.vcrb-stat-icon{width:29px;height:29px}.vcrb-stat strong{font-size:12px}.vcrb-actions{flex-direction:column}.vcrb-action{width:100%}}
 
+
+        /* Proposition graphique 2026 : conserver la grille et le saut de ligne par type */
+        :root { --bg:#f3f5f8; --border:#e4e8ee; --radius:17px; }
+        body { color:#202a37; }
+        .hero { background:linear-gradient(115deg,#b70010 0%,#e30613 70%,#c30013 100%); }
+        .hero-inner {padding:19px 32px 20px;}
+        .hero h1 {font-size:clamp(24px,2.65vw,35px);letter-spacing:-.025em;}
+        .hero-label {background:#ffffff20;border-color:#ffffff35;}
+        main {padding-top:22px;}
+        .toolbar {top:83px;border:1px solid #e8ebf0;box-shadow:0 12px 35px #26364d13;border-radius:17px;}
+        .toolbar-title-icon {background:#fff0f2;color:#d60016;}
+        .catalogue-heading {margin-top:10px;margin-bottom:21px;}
+        .catalogue-heading h2 {font-size:25px;}
+        .catalogue-heading p {font-size:13px;}
+        #cards {gap:19px;}
+        .vehicle-card {border-color:#e4e8ee;box-shadow:0 5px 18px #24344a0c;border-radius:17px;}
+        .vehicle-card:hover {border-color:#e4b6bd;box-shadow:0 16px 35px #24344a1a;}
+        .image-container {height:200px;background:radial-gradient(circle at 50% 40%,#fff 0%,#f6f8fa 67%,#edf0f4 100%);}
+        .image-container img {padding:16px;}
+        .card-content {padding:19px;}
+        .card-title {min-height:68px;margin-bottom:9px;}
+        .card-title h3 {font-size:18px;line-height:1.27;}
+        .card-title p {font-size:11px;}
+        .category-badge {font-size:10px;padding:7px 10px;border-radius:7px;box-shadow:0 3px 9px #0002;}
+        .energy-badge {font-size:10px;padding:7px 10px;border-radius:7px;}
+        .specs {background:#fafbfd;border:1px solid #edf0f4;border-radius:10px;overflow:hidden;margin-bottom:17px;}
+        .spec {min-height:62px;padding:10px 12px;border-color:#edf0f4;}
+        .spec:nth-child(n+3) {border-color:#edf0f4;}
+        .spec-label {font-size:9px;color:#788494;}
+        .spec-value {font-size:13px;color:#263244;}
+        .atn-value {font-size:15px;}
+        .details-button {padding:11px 13px;border-radius:9px;box-shadow:0 3px 8px #d800191f;}
+        .details-button:focus-visible,.field input:focus-visible,.field select:focus-visible {outline:3px solid #ef9ca4;outline-offset:2px;}
+        .catalogue-meta {display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:8px;}
+        .catalogue-meta span {font-size:11px;color:#566274;background:white;border:1px solid #e7eaf0;border-radius:999px;padding:5px 10px;font-weight:700;}
+        .vcrb-photo-card,.vcrb-panel,.vcrb-stat {box-shadow:0 4px 18px #24344a08;}
+        @media(max-width:950px){.toolbar{top:76px}.hero-inner{padding:17px 25px 18px}}
+        @media(max-width:650px){.hero-inner{padding:14px 18px 15px}.hero h1{font-size:25px}.toolbar{top:70px}.card-title{min-height:0}.catalogue-heading h2{font-size:22px}}
+
 </style>
 
 </head>
@@ -2264,9 +2303,13 @@
                     </h2>
 
                     <p>
-                        Sélectionnez un véhicule pour consulter
-                        ses caractéristiques et documents.
+                        Comparez les caractéristiques essentielles et ouvrez une fiche pour consulter les équipements et documents.
                     </p>
+                    <div class="catalogue-meta">
+                        <span>✓ Classement par type</span>
+                        <span>✓ Fiches techniques</span>
+                        <span>✓ Documents associés</span>
+                    </div>
 
                 </div>
 
