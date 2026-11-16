@@ -2622,7 +2622,21 @@
 
                     );
                 }
-            );
+            ).sort((a, b) => {
+                // Tri automatique par type de véhicule (catégorie),
+                // puis par nom à l'intérieur de chaque type.
+                // S'applique aussi aux véhicules ajoutés à data.js.
+                const collator = new Intl.Collator("fr", {
+                    sensitivity: "base",
+                    numeric: true
+                });
+                const typeA = String(a.categorie || "").trim();
+                const typeB = String(b.categorie || "").trim();
+                if (!typeA && typeB) return 1;
+                if (typeA && !typeB) return -1;
+                return collator.compare(typeA, typeB)
+                    || collator.compare(String(a.nom || ""), String(b.nom || ""));
+            });
         }
 
 
