@@ -799,5 +799,42 @@ const vehicles = [
       "email": "info@spirletautomobiles.be",
       "contact": "Christophe VAN DER KELEN — 04/247.76.64 — christophe.vanderkelen@spirletautomobiles.be"
     }
+  },
+  {
+    "id": 25,
+    "nom": "FORD Transit Custom V710 Kombi 340L Trend Electric",
+    "marque": "Ford",
+    "categorie": "Transport personnes",
+    "energie": "Electrique",
+    "modeleExact": "FORD Transit Custom V710 Kombi 340L Trend Electric 71kWh 136ch / 100kW A1 RWD  Electric 71kWh 136ch / 100kW",
+    "equipements": [
+      "Climatisation automatique",
+      "Écran tactile central de 13 pouces",
+      "Système multimédia Ford SYNC 4",
+      "Modem intégré 5G",
+      "Phares avant LED avec feux de route automatiques",
+      "Pare-brise chauffant électrique Quickclear",
+      "Caméra de recul numérique",
+      "Aide au stationnement avant et arrière",
+      "Régulateur de vitesse",
+      "Rétroviseurs extérieurs électriques et chauffants"
+    ],
+    "avantages": [
+      "5,45 m de long × 2,03 m de large × environ 2 m de haut."
+    ],
+    "garage": {
+      "nom": "Spirlet Automobiles (Ford)",
+      "adresse": "",
+      "telephone": "",
+      "email": "",
+      "contact": ""
+    },
+    "puissance": "136",
+    "places": 9,
+    "autonomie": 362,
+    "prix": "44.438.46€",
+    "description": "",
+    "photo": "images/transit-custom-320l.jpg",
+    "pdf": "docs/Croix-Rouge Transport pers - Minibus Custom L2 BEV 13-11-2026 1.pdf"
   }
 ];
