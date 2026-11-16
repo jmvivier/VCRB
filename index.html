@@ -2688,7 +2688,16 @@
             cards.innerHTML =
                 filtered
                     .map(
-                        (vehicle, index) => `
+                        (vehicle, index) => {
+                            const currentType = String(vehicle.categorie || "").trim();
+                            const previousType = index > 0
+                                ? String(filtered[index - 1].categorie || "").trim()
+                                : currentType;
+                            // Une nouvelle rangée de la grille, sans bandeau ni espace ajouté.
+                            const newRow = index > 0 && currentType !== previousType
+                                ? '<div style="grid-column: 1 / -1; height: 0; margin: 0; padding: 0;" aria-hidden="true"></div>'
+                                : '';
+                            return newRow + `
 
                             <article
                                 class="vehicle-card"
@@ -2893,7 +2902,8 @@
 
                             </article>
 
-                        `
+                        `;
+                        }
                     )
                     .join("");
 
