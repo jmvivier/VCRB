@@ -2135,6 +2135,24 @@
         @media(max-width:950px){.toolbar{top:76px}.hero-inner{padding:17px 25px 18px}}
         @media(max-width:650px){.hero-inner{padding:14px 18px 15px}.hero h1{font-size:25px}.toolbar{top:70px}.card-title{min-height:0}.catalogue-heading h2{font-size:22px}}
 
+
+/* Accès temporaire aux véhicules de fonction */
+.hero-inner {padding-right:220px;}
+#fleetAccessButton {position:absolute;right:32px;top:19px;z-index:4;border:1px solid #ffffff80;border-radius:10px;background:#ffffff18;color:white;padding:10px 14px;font-size:12px;font-weight:800;cursor:pointer;white-space:nowrap;}
+#fleetAccessButton:hover {background:#ffffff30;}
+#fleetAccessButton[aria-pressed="true"] {background:#fff;color:#b8000b;}
+#fleetAuth {position:fixed;inset:0;z-index:1100000;background:#0009;display:none;align-items:center;justify-content:center;padding:18px;}
+#fleetAuth.open {display:flex;}
+.fleet-auth-box {background:#fff;color:#202020;border-radius:16px;max-width:410px;width:100%;padding:28px;box-shadow:0 18px 60px #0005;}
+.fleet-auth-box h2 {font-size:21px;margin-bottom:9px;}
+.fleet-auth-box p {color:#667085;font-size:13px;margin-bottom:17px;}
+.fleet-auth-box input {width:100%;height:45px;border:1px solid #ccd2da;border-radius:9px;padding:0 12px;font-size:15px;}
+.fleet-auth-actions {display:flex;justify-content:flex-end;gap:10px;margin-top:16px;}
+.fleet-auth-actions button {border:0;border-radius:9px;padding:11px 17px;font-weight:800;}
+#fleetCancel {background:#edf0f3;color:#263244;}
+#fleetSubmit {background:#e30613;color:#fff;}
+#fleetError {color:#b8000b!important;min-height:18px;margin:7px 0 0!important;}
+@media(max-width:700px){.hero-inner{padding-right:18px!important;padding-top:58px!important;}#fleetAccessButton{top:10px;right:18px;padding:8px 11px;}}
 </style>
 
 </head>
@@ -2152,6 +2170,7 @@
     <section class="hero">
 
         <div class="hero-inner">
+<button id="fleetAccessButton" type="button" aria-pressed="false">🔒 Admin</button>
 
             <div class="hero-label">
                 Catalogue automobile
@@ -2324,6 +2343,16 @@
     </main>
 
 
+    <div id="fleetAuth" role="dialog" aria-modal="true" aria-labelledby="fleetAuthTitle" aria-hidden="true">
+      <form class="fleet-auth-box" id="fleetAuthForm">
+        <h2 id="fleetAuthTitle">Accès aux véhicules de fonction</h2>
+        <p>Saisissez le mot de passe pour afficher cette catégorie.</p>
+        <input id="fleetPassword" type="password" autocomplete="off" placeholder="Mot de passe" required aria-label="Mot de passe">
+        <p id="fleetError" role="alert"></p>
+        <div class="fleet-auth-actions"><button id="fleetCancel" type="button">Annuler</button><button id="fleetSubmit" type="submit">Afficher</button></div>
+      </form>
+    </div>
+
     <!-- =========================================================
          MODAL
     ========================================================== -->
@@ -2432,6 +2461,58 @@
             document.getElementById("modalClose");
 
 
+        // Par défaut, les véhicules de fonction ne sont jamais affichés.
+        let fleetUnlocked = false;
+        function isFunctionVehicle(vehicle) {
+            const category = String(vehicle.categorie || "")
+                .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+                .toLowerCase().replace(/[-_]/g, " ").trim();
+            return /\bfonction\b/.test(category);
+        }
+        function visibleVehicles() {
+            return vehicleList.filter(v => fleetUnlocked || !isFunctionVehicle(v));
+        }
+        const fleetAccessButton = document.getElementById("fleetAccessButton");
+        const fleetAuth = document.getElementById("fleetAuth");
+        const fleetPassword = document.getElementById("fleetPassword");
+        const fleetError = document.getElementById("fleetError");
+        function closeFleetAuth() {
+            fleetAuth.classList.remove("open");
+            fleetAuth.setAttribute("aria-hidden", "true");
+            fleetPassword.value = "";
+            fleetError.textContent = "";
+            fleetAccessButton.focus();
+        }
+        function refreshFleetVisibility() {
+            fleetAccessButton.setAttribute("aria-pressed", String(fleetUnlocked));
+            fleetAccessButton.textContent = fleetUnlocked ? "🔓 Admin" : "🔒 Admin";
+            if (!fleetUnlocked && isFunctionVehicle({categorie:categorySelect.value})) categorySelect.value = "";
+            populateFilters();
+            renderCards();
+            // Fermer une éventuelle fiche de fonction ouverte précédemment.
+            if (!fleetUnlocked) closeModal();
+        }
+        fleetAccessButton.addEventListener("click", () => {
+            if (fleetUnlocked) {fleetUnlocked = false; refreshFleetVisibility(); return;}
+            fleetAuth.classList.add("open");
+            fleetAuth.setAttribute("aria-hidden", "false");
+            fleetPassword.focus();
+        });
+        document.getElementById("fleetCancel").addEventListener("click", closeFleetAuth);
+        fleetAuth.addEventListener("click", e => {if (e.target === fleetAuth) closeFleetAuth();});
+        document.getElementById("fleetAuthForm").addEventListener("submit", e => {
+            e.preventDefault();
+            if (fleetPassword.value === "Fleet2026") {
+                fleetUnlocked = true;
+                closeFleetAuth();
+                refreshFleetVisibility();
+            } else {
+                fleetError.textContent = "Mot de passe incorrect.";
+                fleetPassword.value = "";
+                fleetPassword.focus();
+            }
+        });
+
         /* =========================================================
            ESCAPE HTML
         ========================================================= */
@@ -2498,7 +2579,7 @@
             const categories =
                 [
                     ...new Set(
-                        vehicleList
+                        visibleVehicles()
                             .map(
                                 vehicle =>
                                     vehicle.categorie
@@ -2518,7 +2599,7 @@
             const energies =
                 [
                     ...new Set(
-                        vehicleList
+                        visibleVehicles()
                             .map(
                                 vehicle =>
                                     vehicle.energie
@@ -2608,7 +2689,7 @@
                     .toLowerCase();
 
 
-            return vehicleList.filter(
+            return visibleVehicles().filter(
                 vehicle => {
 
                     // Ne pas publier les fiches de création encore vides.
