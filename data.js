@@ -836,5 +836,40 @@ const vehicles = [
     "description": "",
     "photo": "images/transit-custom-320l.jpg",
     "pdf": "docs/Croix-Rouge Transport pers - Minibus Custom L2 BEV 13-11-2026 1.pdf"
+  },
+  {
+    "id": 26,
+    "nom": "FORD V769 Transit Courier Fourgon",
+    "marque": "Ford",
+    "categorie": "Transport matériel",
+    "energie": "Electrique",
+    "modeleExact": "FORD V769 Transit Courier Fourgon Trend Marketing level 1 BEV A1 FWD BEV 46kWh - 100  kW / 136ch",
+    "equipements": [
+      "Climatisation automatique",
+      "Écran tactile central 12 pouces",
+      "Pack Parking avec caméra de recul et capteurs de stationnement avant",
+      "Démarrage sans clé",
+      "Coffre de rangement avant Frunk 44 litres",
+      "Jantes en acier 16 pouces avec enjoliveurs et pneus 205/65 R16",
+      "Préconditionnement de la batterie et de l'habitacle",
+      "Système Pre-Collision Assist avec détection des piétons et cyclistes",
+      "Système de maintien dans la voie Lane Keeping System",
+      "Régulateur de vitesse avec limiteur réglable"
+    ],
+    "avantages": [],
+    "garage": {
+      "nom": "Spirlet Automobiles (Ford)",
+      "adresse": "Rue Haroun Tazieff 10, 4032 Chênée",
+      "telephone": "04/344.01.01",
+      "email": "info@spirletautomobiles.be",
+      "contact": "Christophe VAN DER KELEN — 04/247.76.64 — christophe.vanderkelen@spirletautomobiles.be"
+    },
+    "puissance": "136ch",
+    "prix": "31.427€",
+    "description": "",
+    "autonomie": 300,
+    "photo": "images/FORD V769 Transit Courier Fourgon.jpg",
+    "pdf": "docs/Croix-Rouge Fonction - Transport matos - E-Courier Transit 13-11-2026 1.pdf",
+    "places": 2
   }
 ];
