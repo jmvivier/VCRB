@@ -186,7 +186,7 @@ const vehicles = [
     "places": 5,
     "prix": "30579€",
     "photo": "images/tourneo-courier.jpg",
-    "pdf": "docs/e-tourneo-courier.pdf",
+    "pdf": "docs/Croix-Rouge Transport pers - Tourneo E-Courier 13-11-2026 1.pdf",
     "description": "Version électrique.",
     "modeleExact": "FORD V769 Tourneo Courier Titanium BEV 43 kWh 136 ch / 100 kW A1",
     "equipements": [
@@ -275,9 +275,9 @@ const vehicles = [
     "energie": "Essence",
     "puissance": 125,
     "places": 5,
-    "prix": 25443,
+    "prix": "25.443€",
     "photo": "images/tourneo-courier.jpg",
-    "pdf": "docs/tourneo-courier.pdf",
+    "pdf": "docs/Croix-Rouge Transport pers - Tourneo E-Courier Essence bte auto 13-11-2026 1.pdf",
     "description": "Ludospace compact.",
     "modeleExact": "FORD V769 Tourneo Courier Titanium 1.0 EcoBoost 125 ch / 92 kW A7",
     "equipements": [
@@ -314,7 +314,7 @@ const vehicles = [
     "autonomie": 288,
     "puissance": 136,
     "places": 5,
-    "prix": 30579,
+    "prix": "30.579€",
     "photo": "images/tourneo-courier.jpg",
     "pdf": "docs/Croix-Rouge Transport pers - Tourneo E-Courier 13-11-2026 1.pdf",
     "description": "Version électrique.",
@@ -352,7 +352,7 @@ const vehicles = [
     "energie": "Diesel",
     "puissance": "136CV",
     "places": 9,
-    "prix": "34271€",
+    "prix": "34.271€",
     "photo": "images/transit-custom-320l.jpg",
     "pdf": "docs/Croix-Rouge Transport pers - Minibus Custom L2 Diesel A8 13-11-2026 1.pdf",
     "description": "Version courte.",
@@ -824,10 +824,10 @@ const vehicles = [
     ],
     "garage": {
       "nom": "Spirlet Automobiles (Ford)",
-      "adresse": "",
-      "telephone": "",
-      "email": "",
-      "contact": ""
+      "adresse": "Rue Haroun Tazieff 10, 4032 Chênée",
+      "telephone": "04/344.01.01",
+      "email": "info@spirletautomobiles.be",
+      "contact": "Christophe VAN DER KELEN — 04/247.76.64 — christophe.vanderkelen@spirletautomobiles.be"
     },
     "puissance": "136",
     "places": 9,
