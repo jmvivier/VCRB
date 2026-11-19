@@ -214,35 +214,6 @@ const vehicles = [
     }
   },
   {
-    "id": 7,
-    "nom": "Peugeot 308SW",
-    "marque": "Peugeot",
-    "categorie": "Service",
-    "energie": "Hybride",
-    "puissance": "145CV",
-    "places": 5,
-    "prix": "25.709€",
-    "photo": "images/peugeot308SW.jpg",
-    "pdf": "docs/tourneo-courier.pdf",
-    "description": "Break.",
-    "modeleExact": "Peugeot 308 SW Style Hybrid 145 ch",
-    "equipements": [
-      "Boîte automatique",
-      "Pack Drive Assist",
-      "Détecteurs d’obstacles avant et arrière",
-      "Pack Access & Navigation",
-      "Mirror Screen sans fil (Apple CarPlay / Android Auto)"
-    ],
-    "avantages": [],
-    "garage": {
-      "nom": "Stellantis &You Grimbergen",
-      "adresse": "Sint-Annalaan 273, 1853 Strombeek-Bever",
-      "telephone": "02/267.31.99",
-      "email": "frederic.schulte@stellantis.com",
-      "contact": "Frédéric Schulte — 0473/82.58.59"
-    }
-  },
-  {
     "id": 8,
     "nom": "Peugeot 308SW",
     "marque": "Peugeot",
@@ -452,79 +423,6 @@ const vehicles = [
       "telephone": "",
       "email": "delphine.draps@dieteren.be",
       "contact": "Delphine Draps"
-    }
-  },
-  {
-    "id": 18,
-    "nom": "Toyota Proace City EV",
-    "marque": "Toyota",
-    "categorie": "Transport matériel",
-    "energie": "Electrique",
-    "autonomie": 330,
-    "puissance": 136,
-    "places": 3,
-    "prix": 29716,
-    "photo": "images/proace-city-ev.jpg",
-    "pdf": "docs/proace-city-ev.pdf",
-    "description": "Utilitaire compact électrique.",
-    "modeleExact": "Toyota Proace City EV Panel Van SWB Full Electric 50 kWh 136 hp Comfort",
-    "equipements": [
-      "Portes latérales coulissantes droite et gauche",
-      "Régulateur et limiteur de vitesse",
-      "Alerte de franchissement de ligne",
-      "Reconnaissance des panneaux",
-      "Écran central 8 ou 10 pouces",
-      "Bluetooth",
-      "Prises USB",
-      "Compatibilité MirrorLink / smartphone",
-      "Climatisation manuelle"
-    ],
-    "avantages": [
-      "Dimensions extérieures (L × l × H, hors rétroviseurs) : 4,403 m × 1,848 m × 1,880 m",
-      "Empattement : 2,785 m ; longueur utile : 1 781 mm ; PTAC : 2 390 kg"
-    ],
-    "garage": {
-      "nom": "Garage Gégo — Toyota Namur",
-      "adresse": "Chaussée de Marche 718, 5100 Naninne (Namur)",
-      "telephone": "081/40.24.24",
-      "email": "info.toyotanamur@gegoteam.be",
-      "contact": "Geoffroy Tillieux — 0479/205.366 — geoffroy.tilieux@gegoteam.be"
-    }
-  },
-  {
-    "id": 19,
-    "nom": "Toyota Proace EV Medium 75 kWh",
-    "marque": "Toyota",
-    "categorie": "Transport matériel",
-    "energie": "Electrique",
-    "puissance": 136,
-    "places": 3,
-    "prix": 30492,
-    "photo": "images/proace-ev.jpg",
-    "pdf": "docs/proace-ev.pdf",
-    "description": "Utilitaire électrique.",
-    "modeleExact": "Toyota Proace EV Medium Full Electric 75 kWh E-Toggle Comfort",
-    "equipements": [
-      "Portes latérales coulissantes droite et gauche",
-      "Régulateur et limiteur de vitesse",
-      "Alerte de franchissement de ligne",
-      "Reconnaissance des panneaux",
-      "Écran central 8 ou 10 pouces",
-      "Bluetooth",
-      "Prises USB",
-      "Compatibilité MirrorLink / smartphone",
-      "Climatisation manuelle"
-    ],
-    "avantages": [
-      "Dimensions extérieures (L × l × H, hors rétroviseurs) : 4,96 m × 1,92 m × 1,90 m",
-      "Empattement : 3,28 m ; longueur utile : 2 512 mm ; PTAC : 3 025 kg"
-    ],
-    "garage": {
-      "nom": "Garage Gégo — Toyota Namur",
-      "adresse": "Chaussée de Marche 718, 5100 Naninne (Namur)",
-      "telephone": "081/40.24.24",
-      "email": "info.toyotanamur@gegoteam.be",
-      "contact": "Geoffroy Tillieux — 0479/205.366 — geoffroy.tilieux@gegoteam.be"
     }
   },
   {
