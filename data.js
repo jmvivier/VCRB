@@ -147,7 +147,6 @@ const vehicles = [
     "photoHover": "images/Fiche 2008 Allure electrique.jpg",
     "categorie": "Service",
     "energie": "Electrique",
-    "autonomie": "406KM",
     "puissance": "156CV",
     "places": 5,
     "atn": 122,
@@ -345,44 +344,6 @@ const vehicles = [
     }
   },
   {
-    "id": 13,
-    "nom": "Ford Transit Custom Kombi M1 320S Trend",
-    "marque": "Ford",
-    "categorie": "Transport personnes",
-    "energie": "Diesel",
-    "puissance": "136CV",
-    "places": 9,
-    "prix": "34.271€",
-    "photo": "images/transit-custom-320l.jpg",
-    "pdf": "docs/Croix-Rouge Transport pers - Minibus Custom L2 Diesel A8 13-11-2026 1.pdf",
-    "description": "Version courte.",
-    "modeleExact": "FORD Transit Custom V710 Kombi M1 320S Trend 2.0 TDCi 136 ch / 100 kW A8 FWD SWB",
-    "equipements": [
-      "ABS / ESP et airbags",
-      "Caméra 360° et aide au stationnement",
-      "Détecteur d’angle mort et alerte trafic transversal",
-      "Climatisation automatique",
-      "Navigation et Bluetooth",
-      "Feux et essuie-glaces automatiques",
-      "Boîte automatique A8",
-      "Sellerie vinyle",
-      "Réglages du siège conducteur",
-      "Attelage fixe inclus"
-    ],
-    "avantages": [
-      "Flocage réalisé chez Ford via Vektor",
-      "Dimensions extérieures (L × l × H, hors rétroviseurs) : 5,05 m × 2,00 m × 1,95–1,96 m",
-      "Empattement : 3,10 m ; longueur utile : 2 647 mm ; PTAC : 3 225 kg"
-    ],
-    "garage": {
-      "nom": "Spirlet Automobiles (Ford)",
-      "adresse": "Rue Haroun Tazieff 10, 4032 Chênée",
-      "telephone": "04/344.01.01",
-      "email": "info@spirletautomobiles.be",
-      "contact": "Christophe VAN DER KELEN — 04/247.76.64 — christophe.vanderkelen@spirletautomobiles.be"
-    }
-  },
-  {
     "id": 14,
     "nom": "Ford Transit Custom Kombi 320L Trend",
     "marque": "Ford",
@@ -428,7 +389,7 @@ const vehicles = [
     "energie": "Hybride rechargeable",
     "puissance": "232CV",
     "places": 9,
-    "prix": "36.416€",
+    "prix": "39.078€",
     "photo": "images/transit-custom-320l.jpg",
     "pdf": "docs/Croix-Rouge Transport pers - Minibus Custom L2 PHEV 13-11-2026 1.pdf",
     "description": "Version hybride rechargeable.",
