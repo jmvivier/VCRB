@@ -28,9 +28,11 @@ const vehicles = [
       "Sièges réglables en hauteur"
     ],
     "avantages": [
-      "Lettrage compris et intégré dans la commande",
-      "Transport du véhicule vers la maison Croix-Rouge compris",
-      "Maintien en stock d’un véhicule prêt à être aménagé"
+      "Offre actualisée : Toujours contacter le garage avant l’établissement du bon de commande afin de confirmer les prix et les conditions.",
+      "Lettrage : le lettrage est inclus dans l'offre : projet (coordonnées) à transmettre",
+      "Frais de transport : Inclus par défaut dans toutes les offres. Signaler s’ils doivent être déduits.",
+      "Contrôle technique : Préciser si le passage au contrôle technique doit être inclus : classique (1 an) ou transport de personnes (6 mois).",
+      "Maintien en stock de 2 véhicules aménagés et de 2 véhicules prêts à être aménagés"
     ],
     "garage": {
       "nom": "Spirlet Automobiles (Ford)",
@@ -68,8 +70,10 @@ const vehicles = [
       "Sièges réglables en hauteur"
     ],
     "avantages": [
-      "Lettrage compris et intégré dans la commande",
-      "Transport du véhicule vers la maison Croix-Rouge compris",
+      "Offre actualisée : Toujours contacter le garage avant l’établissement du bon de commande afin de confirmer les prix et les conditions.",
+      "Lettrage : le lettrage est inclus dans l'offre : projet (coordonnées) à transmettre",
+      "Frais de transport : Inclus par défaut dans toutes les offres. Signaler s’ils doivent être déduits.",
+      "Contrôle technique : Préciser si le passage au contrôle technique doit être inclus : classique (1 an) ou transport de personnes (6 mois).",
       "Maintien en stock de 2 véhicules aménagés et de 2 véhicules prêts à être aménagés"
     ],
     "garage": {
@@ -201,9 +205,11 @@ const vehicles = [
       "USB avant/arrière et connectivité smartphone"
     ],
     "avantages": [
-      "Flocage réalisé chez Ford via Vektor",
-      "Dimensions extérieures (L × l × H, hors rétroviseurs) : 4,337 m × 1,800 m × 1,836 m",
-      "Empattement : 2,692 m ; longueur utile : 1 492 mm ; PTAC : 2 000 kg"
+      "Dimensions extérieures (L × l × H, hors rétroviseurs) : 4,337 m × 1,800 m × 1,836 m Empattement : 2,692 m ; longueur utile : 1 492 mm ; PTAC : 2 000 kg",
+      "Offre actualisée : Toujours contacter le garage avant l’établissement du bon de commande afin de confirmer les prix et les conditions.",
+      "Lettrage : Préciser si un lettrage doit être inclus dans le bon de commande et transmettre le projet pour obtenir un devis auprès de Vektor.",
+      "Frais de transport : Inclus par défaut dans toutes les offres. Signaler s’ils doivent être déduits.",
+      "Contrôle technique : Préciser si le passage au contrôle technique doit être inclus : classique (1 an) ou transport de personnes (6 mois)."
     ],
     "garage": {
       "nom": "Spirlet Automobiles (Ford)",
@@ -263,9 +269,11 @@ const vehicles = [
       "USB avant/arrière et connectivité smartphone"
     ],
     "avantages": [
-      "Flocage réalisé chez Ford via Vektor",
-      "Dimensions extérieures (L × l × H, hors rétroviseurs) : 4,337 m × 1,800 m × 1,836 m",
-      "Empattement : 2,692 m ; longueur utile : 1 492 mm ; PTAC : 2 000 kg"
+      "Dimensions extérieures (L × l × H, hors rétroviseurs) : 4,337 m × 1,800 m × 1,836 m Empattement : 2,692 m ; longueur utile : 1 492 mm ; PTAC : 2 000 kg",
+      "Offre actualisée : Toujours contacter le garage avant l’établissement du bon de commande afin de confirmer les prix et les conditions.",
+      "Lettrage : Préciser si un lettrage doit être inclus dans le bon de commande et transmettre le projet pour obtenir un devis auprès de Vektor.",
+      "Frais de transport : Inclus par défaut dans toutes les offres. Signaler s’ils doivent être déduits.",
+      "Contrôle technique : Préciser si le passage au contrôle technique doit être inclus : classique (1 an) ou transport de personnes (6 mois)."
     ],
     "garage": {
       "nom": "Spirlet Automobiles (Ford)",
@@ -302,9 +310,11 @@ const vehicles = [
       "USB avant/arrière et connectivité smartphone"
     ],
     "avantages": [
-      "Flocage réalisé chez Ford via Vektor",
-      "Dimensions extérieures (L × l × H, hors rétroviseurs) : 4,337 m × 1,800 m × 1,836 m",
-      "Empattement : 2,692 m ; longueur utile : 1 492 mm ; PTAC : 2 000 kg"
+      "Dimensions extérieures (L × l × H, hors rétroviseurs) : 4,337 m × 1,800 m × 1,836 m Empattement : 2,692 m ; longueur utile : 1 492 mm ; PTAC : 2 000 kg",
+      "Offre actualisée : Toujours contacter le garage avant l’établissement du bon de commande afin de confirmer les prix et les conditions.",
+      "Lettrage : Préciser si un lettrage doit être inclus dans le bon de commande et transmettre le projet pour obtenir un devis auprès de Vektor.",
+      "Frais de transport : Inclus par défaut dans toutes les offres. Signaler s’ils doivent être déduits.",
+      "Contrôle technique : Préciser si le passage au contrôle technique doit être inclus : classique (1 an) ou transport de personnes (6 mois)."
     ],
     "garage": {
       "nom": "Spirlet Automobiles (Ford)",
@@ -340,9 +350,11 @@ const vehicles = [
       "Attelage fixe inclus"
     ],
     "avantages": [
-      "Flocage réalisé chez Ford via Vektor",
-      "Dimensions extérieures (L × l × H, hors rétroviseurs) : 5,45 m × 2,28 m × 1,96 m",
-      "Empattement : 3,50 m ; longueur utile : 3 002 mm ; PTAC : 3 225 kg"
+      "Dimensions extérieures (L × l × H, hors rétroviseurs) : 5,45 m × 2,28 m × 1,96 m Empattement : 3,50 m ; longueur utile : 3 002 mm ; PTAC : 3 225 kg",
+      "Offre actualisée : Toujours contacter le garage avant l’établissement du bon de commande afin de confirmer les prix et les conditions.",
+      "Lettrage : Préciser si un lettrage doit être inclus dans le bon de commande et transmettre le projet pour obtenir un devis auprès de Vektor.",
+      "Frais de transport : Inclus par défaut dans toutes les offres. Signaler s’ils doivent être déduits.",
+      "Contrôle technique : Préciser si le passage au contrôle technique doit être inclus : classique (1 an) ou transport de personnes (6 mois)."
     ],
     "garage": {
       "nom": "Spirlet Automobiles (Ford)",
@@ -378,9 +390,11 @@ const vehicles = [
       "Attelage fixe inclus"
     ],
     "avantages": [
-      "Flocage réalisé chez Ford via Vektor",
-      "Dimensions extérieures (L × l × H, hors rétroviseurs) : 5,45 m × 2,00–2,03 m × 1,96 m",
-      "Empattement : 3,50 m ; longueur utile : 3 047 mm ; PTAC : ≈ 3 400 kg"
+      "Dimensions extérieures (L × l × H, hors rétroviseurs) : 5,45 m × 2,00–2,03 m × 1,96 m Empattement : 3,50 m ; longueur utile : 3 047 mm ; PTAC : ≈ 3 400 kg",
+      "Offre actualisée : Toujours contacter le garage avant l’établissement du bon de commande afin de confirmer les prix et les conditions.",
+      "Lettrage : Préciser si un lettrage doit être inclus dans le bon de commande et transmettre le projet pour obtenir un devis auprès de Vektor.",
+      "Frais de transport : Inclus par défaut dans toutes les offres. Signaler s’ils doivent être déduits.",
+      "Contrôle technique : Préciser si le passage au contrôle technique doit être inclus : classique (1 an) ou transport de personnes (6 mois)."
     ],
     "garage": {
       "nom": "Spirlet Automobiles (Ford)",
@@ -451,8 +465,11 @@ const vehicles = [
       "Caméra 360°"
     ],
     "avantages": [
-      "Dimensions extérieures (L × l × H, hors rétroviseurs) : 5,531 m × 2,059 m × 2,49 m",
-      "Empattement : 3,30 m ; longueur utile : 3 044 mm ; PTAC : 3 100 kg"
+      "Dimensions extérieures (L × l × H, hors rétroviseurs) : 5,531 m × 2,059 m × 2,49 m  Empattement : 3,30 m ; longueur utile : 3 044 mm ; PTAC : 3 100 kg",
+      "Offre actualisée : Toujours contacter le garage avant l’établissement du bon de commande afin de confirmer les prix et les conditions.",
+      "Lettrage : Préciser si un lettrage doit être inclus dans le bon de commande et transmettre le projet pour obtenir un devis auprès de Vektor.",
+      "Frais de transport : Inclus par défaut dans toutes les offres. Signaler s’ils doivent être déduits.",
+      "Contrôle technique : Préciser si le passage au contrôle technique doit être inclus : classique (1 an) ou transport de personnes (6 mois)."
     ],
     "garage": {
       "nom": "Spirlet Automobiles (Ford)",
@@ -488,8 +505,11 @@ const vehicles = [
       "Caméra 360°"
     ],
     "avantages": [
-      "Dimensions extérieures (L × l × H, hors rétroviseurs) : 5,981 m × 2,059 m × 2,55 m",
-      "Empattement : 3,75 m ; longueur utile : 3 494 mm ; PTAC : 3 500 kg"
+      "Dimensions extérieures (L × l × H, hors rétroviseurs) : 5,981 m × 2,059 m × 2,55 m  Empattement : 3,75 m ; longueur utile : 3 494 mm ; PTAC : 3 500 kg",
+      "Offre actualisée : Toujours contacter le garage avant l’établissement du bon de commande afin de confirmer les prix et les conditions.",
+      "Lettrage : Préciser si un lettrage doit être inclus dans le bon de commande et transmettre le projet pour obtenir un devis auprès de Vektor.",
+      "Frais de transport : Inclus par défaut dans toutes les offres. Signaler s’ils doivent être déduits.",
+      "Contrôle technique : Préciser si le passage au contrôle technique doit être inclus : classique (1 an) ou transport de personnes (6 mois)."
     ],
     "garage": {
       "nom": "Spirlet Automobiles (Ford)",
@@ -679,7 +699,11 @@ const vehicles = [
       "Rétroviseurs extérieurs électriques et chauffants"
     ],
     "avantages": [
-      "5,45 m de long × 2,03 m de large × environ 2 m de haut."
+      "5,45 m de long × 2,03 m de large × environ 2 m de haut.",
+      "Offre actualisée : Toujours contacter le garage avant l’établissement du bon de commande afin de confirmer les prix et les conditions.",
+      "Lettrage : Préciser si un lettrage doit être inclus dans le bon de commande et transmettre le projet pour obtenir un devis auprès de Vektor.",
+      "Frais de transport : Inclus par défaut dans toutes les offres. Signaler s’ils doivent être déduits.",
+      "Contrôle technique : Préciser si le passage au contrôle technique doit être inclus : classique (1 an) ou transport de personnes (6 mois)."
     ],
     "garage": {
       "nom": "Spirlet Automobiles (Ford)",
@@ -715,7 +739,12 @@ const vehicles = [
       "Système de maintien dans la voie Lane Keeping System",
       "Régulateur de vitesse avec limiteur réglable"
     ],
-    "avantages": [],
+    "avantages": [
+      "Offre actualisée : Toujours contacter le garage avant l’établissement du bon de commande afin de confirmer les prix et les conditions.",
+      "Lettrage : Préciser si un lettrage doit être inclus dans le bon de commande et transmettre le projet pour obtenir un devis auprès de Vektor.",
+      "Frais de transport : Inclus par défaut dans toutes les offres. Signaler s’ils doivent être déduits.",
+      "Contrôle technique : Préciser si le passage au contrôle technique doit être inclus : classique (1 an) ou transport de personnes (6 mois)."
+    ],
     "garage": {
       "nom": "Spirlet Automobiles (Ford)",
       "adresse": "Rue Haroun Tazieff 10, 4032 Chênée",
@@ -751,10 +780,11 @@ const vehicles = [
       "Phares automatiques"
     ],
     "avantages": [
-      "Longueur\t5,285 m",
-      "Largeur avec rétroviseurs\t2,260 m",
-      "Hauteur\t2,285 m",
-      "Empattement\t3,360 m"
+      "Longueur\t5,285 m  Largeur avec rétroviseurs\t2,260 m  Hauteur\t2,285 m  Empattement\t3,360 m",
+      "Offre actualisée : Toujours contacter le garage avant l’établissement du bon de commande afin de confirmer les prix et les conditions.",
+      "Lettrage : Préciser si un lettrage doit être inclus dans le bon de commande et transmettre le projet pour obtenir un devis auprès de Vektor.",
+      "Frais de transport : Inclus par défaut dans toutes les offres. Signaler s’ils doivent être déduits.",
+      "Contrôle technique : Préciser si le passage au contrôle technique doit être inclus : classique (1 an) ou transport de personnes (6 mois)."
     ],
     "garage": {
       "nom": "Spirlet Automobiles (Ford)",
