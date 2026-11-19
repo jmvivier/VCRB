@@ -11,8 +11,8 @@ const vehicles = [
     "places": 6,
     "prix": "46564€ aménagé",
     "photo": "images/grand-tpmr-connect.jpg",
-    "pdf": "docs/tpmr-connect.pdf",
-    "amenagementPdf": "pdfs/Fiche-Amenagement-tpmr court.pdf",
+    "pdf": "docs/Croix-Rouge Transport PMR - Tourneo Connect L1 19-11-2026.pdf",
+    "amenagementPdf": "pdfs/ACM - OFFRE aménagement PMR Connect L1.pdf",
     "description": "Version courte TPMR.",
     "modeleExact": "FORD V761 Tourneo Connect Titanium 1.5 EcoBoost 115 PS A7",
     "equipements": [
@@ -51,8 +51,8 @@ const vehicles = [
     "places": 7,
     "prix": "44766€ aménagé",
     "photo": "images/tpmr-connect.jpg",
-    "pdf": "docs/grand-tpmr-connect.pdf",
-    "amenagementPdf": "pdfs/Fiche-Amenagement-tpmr long.pdf",
+    "pdf": "docs/Croix-Rouge Transport PMR - Tourneo Connect L2 19-11-2026.pdf",
+    "amenagementPdf": "pdfs/ACM - OFFRE aménagement PMR Connect L2.pdf",
     "description": "Version longue TPMR.",
     "modeleExact": "FORD V761 Grand Tourneo Connect Titanium 1.5 EcoBoost 115 PS A7",
     "equipements": [
