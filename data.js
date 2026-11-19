@@ -832,5 +832,45 @@ const vehicles = [
     "photo": "images/FORD V769 Transit Courier Fourgon.jpg",
     "pdf": "docs/Croix-Rouge Fonction - Transport matos - E-Courier Transit 13-11-2026 1.pdf",
     "places": 2
+  },
+  {
+    "id": 27,
+    "nom": "FORD transit City Van L2H2 Electrique",
+    "marque": "Ford",
+    "categorie": "Transport matériel",
+    "energie": "Electrique",
+    "modeleExact": "FORD V837 Transit City Van L2H2 330M Trend BEV A1 FWD BEV",
+    "equipements": [
+      "Freinage d'urgence automatique",
+      "Aide au maintien dans la voie",
+      "Régulateur de vitesse adaptatif",
+      "Reconnaissance des panneaux de signalisation",
+      "Aide au stationnement avant et arrière",
+      "Caméra de recul",
+      "Écran tactile central de 12,3 pouces",
+      "Climatisation manuelle",
+      "Démarrage sans clé",
+      "Phares automatiques"
+    ],
+    "avantages": [
+      "Longueur\t5,285 m",
+      "Largeur avec rétroviseurs\t2,260 m",
+      "Hauteur\t2,285 m",
+      "Empattement\t3,360 m"
+    ],
+    "garage": {
+      "nom": "Spirlet Automobiles (Ford)",
+      "adresse": "Rue Haroun Tazieff 10, 4032 Chênée",
+      "telephone": "04/344.01.01",
+      "email": "info@spirletautomobiles.be",
+      "contact": "Christophe VAN DER KELEN — 04/247.76.64 — christophe.vanderkelen@spirletautomobiles.be"
+    },
+    "puissance": "110KW",
+    "prix": "34.139€",
+    "description": "",
+    "pdf": "docs/Croix-Rouge Transport matos - Transit City L2H2 13-11-2026 2.pdf",
+    "places": 3,
+    "autonomie": 224,
+    "photo": "images/Ford transit city l2h2.jpg"
   }
 ];
