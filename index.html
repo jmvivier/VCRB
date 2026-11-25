@@ -2153,6 +2153,9 @@
 #fleetSubmit {background:#e30613;color:#fff;}
 #fleetError {color:#b8000b!important;min-height:18px;margin:7px 0 0!important;}
 @media(max-width:700px){.hero-inner{padding-right:18px!important;padding-top:58px!important;}#fleetAccessButton{top:10px;right:18px;padding:8px 11px;}}
+
+.card-footer { justify-content: flex-end; }
+.details-button { width: 100%; }
 </style>
 
 </head>
@@ -2990,24 +2993,7 @@
                                     <div class="card-footer">
 
 
-                                        <div class="atn">
-
-                                            <span
-                                                class="atn-label"
-                                            >
-                                                ATN
-                                            </span>
-
-                                            <span
-                                                class="atn-value"
-                                            >
-                                                ${escapeHtml(
-                                                    vehicle.atn ||
-                                                    "—"
-                                                )}
-                                            </span>
-
-                                        </div>
+                                        
 
 
                                         <button
@@ -3112,19 +3098,18 @@
         function openModal(vehicle) {
             if (!vehicle) return;
             const vehiclePdf = vehicle.pdf || vehicle.vehiclePdf || (vehicle.id ? `pdf/vehicules/vehicule-${vehicle.id}.pdf` : "");
-            const amenagementPdf = vehicle.amenagementPdf || (vehicle.id ? `pdf/amenagement/vehicule-${vehicle.id}.pdf` : "");
+            const amenagementPdf = typeof vehicle.amenagementPdf === "string" && !/^(?:—|-|n\/a|non|aucun|null|false)$/i.test(vehicle.amenagementPdf.trim()) ? vehicle.amenagementPdf.trim() : "";
             const specs = [
                 ["Énergie", vehicle.energie, "⚡"],
                 ["Puissance", vehicle.puissance, "◈"],
                 ["Places", vehicle.places, "♙"],
                 ["Autonomie", vehicle.autonomie, "↗"],
-                ["Prix", vehicle.prix, "€"],
-                ["ATN", vehicle.atn, "▤"]
+                ["Prix", vehicle.prix, "€"]
             ].filter(([, value]) => value !== undefined && value !== null && String(value).trim() && String(value).trim() !== "—");
             const specsHtml = specs.map(([label, value, icon]) => `<div class="vcrb-stat"><span class="vcrb-stat-icon" aria-hidden="true">${icon}</span><div><small>${escapeHtml(label)}</small><strong>${escapeHtml(String(value))}</strong></div></div>`).join("");
             const buttons = [
                 vehiclePdf ? `<a href="${escapeHtml(vehiclePdf)}" target="_blank" rel="noopener" class="vcrb-action vcrb-action-main">▤ &nbsp; Fiche véhicule <span aria-hidden="true">↗</span></a>` : "",
-                amenagementPdf ? `<a href="${escapeHtml(amenagementPdf)}" target="_blank" rel="noopener" class="vcrb-action vcrb-action-secondary">▱ &nbsp; Aménagement <span aria-hidden="true">↗</span></a>` : ""
+                amenagementPdf ? `<a hidden style="display:none" data-check-pdf href="${escapeHtml(amenagementPdf)}" target="_blank" rel="noopener" class="vcrb-action vcrb-action-secondary">▱ &nbsp; Aménagement <span aria-hidden="true">↗</span></a>` : ""
             ].filter(Boolean).join("");
             const hasLists = (Array.isArray(vehicle.equipements) && vehicle.equipements.some(Boolean)) || (Array.isArray(vehicle.avantages) && vehicle.avantages.some(Boolean));
             modalBody.innerHTML = `
@@ -3145,6 +3130,16 @@
                     ${hasLists ? `<div class="vcrb-section-title"><span>Équipements & points forts</span><span class="vcrb-section-rule"></span></div><div class="vcrb-lists">${renderDetailList("Équipements principaux", vehicle.equipements, 10, "equipment")}${renderDetailList("Avantages & remarques", vehicle.avantages, 5, "advantages")}</div>` : ""}
                     ${renderGarage(vehicle.garage)}
                 </div>`;
+            const layoutLink = modalBody.querySelector("[data-check-pdf]");
+            if (layoutLink) {
+                fetch(layoutLink.href, { method: "HEAD", cache: "no-cache" })
+                    .then(response => {
+                        if (response.ok && /application\/pdf/i.test(response.headers.get("content-type") || "")) {
+                            layoutLink.hidden = false;
+                            layoutLink.style.removeProperty("display");
+                        }
+                    }).catch(() => {});
+            }
             modal.classList.add("visible");
             modal.setAttribute("aria-hidden", "false");
             document.body.style.overflow = "hidden";
