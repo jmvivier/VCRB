@@ -332,9 +332,9 @@ const vehicles = [
     "energie": "Diesel",
     "puissance": "136CV",
     "places": 9,
-    "prix": "35070€",
+    "prix": "37.885€",
     "photo": "images/transit-custom-320l.jpg",
-    "pdf": "docs/FORD Transit Custom V710 KOMBI 320L TREND 2.0TDI.pdf",
+    "pdf": "docs/Croix-Rouge Transport pers - Minibus Custom L2 Diesel A8 13-11-2026 2.pdf",
     "description": "Version longue.",
     "modeleExact": "FORD Transit Custom V710 Kombi 320L Trend 2.0 TDCi 136 ch / 100 kW A8 FWD LWB",
     "equipements": [
