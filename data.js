@@ -800,5 +800,40 @@ const vehicles = [
     "places": 3,
     "autonomie": 224,
     "photo": "images/Ford transit city l2h2.jpg"
+  },
+  {
+    "id": 28,
+    "nom": "Peugeot 208 Allure Plus",
+    "marque": "Peugeot",
+    "categorie": "Service",
+    "energie": "Electrique",
+    "modeleExact": "Peugeot 208 Allure Plus ÉLECTRIQUE 156 (51 kWh)",
+    "equipements": [
+      "Pack Vision 360°",
+      "Pompe à chaleur",
+      "Navigation Peugeot i-Connect Advanced",
+      "Recharge smartphone sans fil 15 W",
+      "Chargeur embarqué triphasé 11 kW bidirectionnel",
+      "Fonction Vehicle to Load (V2L)",
+      "Peugeot i-Cockpit avec combiné numérique 10 pouces",
+      "Accès et démarrage mains libres Proximity",
+      "Climatisation automatique monozone",
+      "Jantes en alliage NOMA 16 pouces"
+    ],
+    "avantages": [],
+    "garage": {
+      "nom": "Stellantis &You Grimbergen",
+      "adresse": "Sint-Annalaan 273, 1853 Strombeek-Bever",
+      "telephone": "02/267.31.99",
+      "email": "frederic.schulte@stellantis.com",
+      "contact": "Frédéric Schulte — 0473/82.58.59"
+    },
+    "puissance": "156ch",
+    "places": 5,
+    "prix": "29.832€",
+    "description": "",
+    "photo": "images/Peugeot 208 Allure Plus.jpg",
+    "pdf": "docs/Offre Peugeot e-208 BEV Allure Plus Electrique 156ch Croix-Rouge novembre 2026.pdf",
+    "autonomie": 433
   }
 ];
